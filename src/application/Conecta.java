@@ -18,6 +18,7 @@ public class Conecta {
             //JOptionPane.showMessageDialog(null,"conexão realizada com sucesso");
         }catch (SQLException ex){
             JOptionPane.showMessageDialog(null,"erro ao conectar");
+            System.exit(0);
         }
     }
 
