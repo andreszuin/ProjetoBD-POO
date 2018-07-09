@@ -7,28 +7,52 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerModFunc">
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerModFunc">
    <children>
-      <Text layoutX="34.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" />
-      <TextField fx:id="idField" layoutX="34.0" layoutY="80.0" />
-      <TextField fx:id="cpfField" editable="false" layoutX="35.0" layoutY="135.0" />
-      <TextField fx:id="nomeField" layoutX="35.0" layoutY="191.0" />
-      <TextField fx:id="idadeField" layoutX="35.0" layoutY="248.0" />
-      <TextField fx:id="emailField" layoutX="213.0" layoutY="135.0" />
-      <TextField fx:id="telField" layoutX="213.0" layoutY="191.0" />
-      <TextField fx:id="endField" layoutX="213.0" layoutY="248.0" />
-      <Text layoutX="35.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF" />
-      <Text layoutX="34.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
-      <Text layoutX="34.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idade" />
-      <Text layoutX="34.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo" />
-      <ChoiceBox fx:id="sexoField" layoutX="35.0" layoutY="303.0" prefWidth="150.0" />
-      <Text layoutX="213.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail" />
-      <Text layoutX="213.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone" />
-      <Text layoutX="213.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço" />
-      <Button layoutX="84.0" layoutY="361.0" mnemonicParsing="false" onAction="#modificar" text="Editar" />
-      <Button layoutX="212.0" layoutY="80.0" mnemonicParsing="false" onAction="#encontrar" text="Encontrar" />
-      <Button layoutX="255.0" layoutY="361.0" mnemonicParsing="false" onAction="#excluir" text="Excluir" />
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+      <Text layoutX="53.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <TextField fx:id="idField" layoutX="78.0" layoutY="99.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="cpfField" editable="false" layoutX="518.0" layoutY="150.0" />
+      <TextField fx:id="nomeField" layoutX="78.0" layoutY="151.0" prefHeight="25.0" prefWidth="370.0" />
+      <TextField fx:id="idadeField" layoutX="399.0" layoutY="219.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="emailField" layoutX="79.0" layoutY="219.0" prefWidth="240.0" />
+      <TextField fx:id="telField" layoutX="519.0" layoutY="288.0" />
+      <TextField fx:id="endField" layoutX="78.0" layoutY="288.0" prefHeight="25.0" prefWidth="370.0" />
+      <Text layoutX="477.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="32.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="350.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idade:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="474.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <ChoiceBox fx:id="sexoField" layoutX="518.0" layoutY="217.0" prefWidth="150.0" />
+      <Text layoutX="32.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="453.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="11.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Button layoutX="453.0" layoutY="330.0" mnemonicParsing="false" onAction="#modificar" prefHeight="50.0" prefWidth="100.0" text="Editar cadastro" />
+      <Button layoutX="253.0" layoutY="99.0" mnemonicParsing="false" onAction="#encontrar" text="Encontrar" />
+      <Button layoutX="567.0" layoutY="330.0" mnemonicParsing="false" onAction="#excluir" prefHeight="50.0" prefWidth="100.0" text="Excluir cadastro" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="700.0">
          <menus>
             <Menu mnemonicParsing="false" text="Inicio">
                <items>
@@ -63,5 +87,10 @@
             </Menu>
          </menus>
       </MenuBar>
+      <Label alignment="CENTER" layoutX="180.0" layoutY="39.0" prefHeight="33.0" prefWidth="340.0" text=" Alteração do cadastro do funcionário" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

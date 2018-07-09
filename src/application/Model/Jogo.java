@@ -1,8 +1,6 @@
 package application.Model;
 
 
-import java.util.Date;
-
 public class Jogo extends Produto{
     protected String produtora;
     protected String genero;

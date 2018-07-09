@@ -76,6 +76,4 @@ public class ControllerModCliente extends ControllerMaster{
         endField.setText(null);
         sexoField.setValue("Masculino");
     }
-
-
 }

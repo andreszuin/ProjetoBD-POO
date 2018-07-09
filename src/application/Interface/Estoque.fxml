@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerEstoque">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerEstoque">
    <children>
-      <TableView fx:id="tabela_estoque" layoutX="72.0" layoutY="27.0" prefHeight="365.0" prefWidth="461.0">
+      <TableView fx:id="tabela_estoque" layoutY="27.0" prefHeight="575.0" prefWidth="900.0">
         <columns>
-          <TableColumn fx:id="colId" prefWidth="100.0" resizable="false" text="Id" />
-          <TableColumn fx:id="colNome" prefWidth="180.0" resizable="false" text="Nome" />
-            <TableColumn fx:id="colDesc" prefWidth="205.0" text="Descrição" />
+          <TableColumn fx:id="colId" prefWidth="100.0" resizable="false" text="ID" />
+          <TableColumn fx:id="colNome" prefWidth="268.0" resizable="false" text="Nome" />
+            <TableColumn fx:id="colDesc" prefWidth="531.0" text="Descrição" />
         </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="605.0">
+      <MenuBar layoutY="2.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="900.0">
          <menus>
             <Menu mnemonicParsing="false" text="Inicio">
                <items>
@@ -52,6 +54,9 @@
                </items>
             </Menu>
          </menus>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </MenuBar>
    </children>
 </AnchorPane>

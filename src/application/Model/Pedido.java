@@ -2,7 +2,6 @@ package application.Model;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Pedido {
     protected Integer cod;

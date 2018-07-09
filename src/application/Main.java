@@ -1,7 +1,6 @@
 package application;
 
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -23,7 +22,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			conex.conexao();
-			this.mainstage = primaryStage;
+			Main.mainstage = primaryStage;
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("Interface/Menu.fxml"));
 			Parent root = loader.load();
 			primaryStage.setTitle("Loja");

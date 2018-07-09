@@ -7,26 +7,47 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerModCliente">
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerModCliente">
    <children>
-      <Button layoutX="74.0" layoutY="290.0" mnemonicParsing="false" onAction="#modificar" text="Editar" />
-      <Text layoutX="202.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço" />
-      <Text layoutX="202.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone" />
-      <Text layoutX="202.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail" />
-      <Text layoutX="24.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo" />
-      <Text layoutX="24.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idade" />
-      <Text layoutX="24.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
-      <Text layoutX="24.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF" />
-      <TextField fx:id="endField" layoutX="202.0" layoutY="233.0" />
-      <TextField fx:id="telField" layoutX="202.0" layoutY="176.0" />
-      <TextField fx:id="emailField" layoutX="202.0" layoutY="120.0" />
-      <TextField fx:id="idadeField" layoutX="25.0" layoutY="177.0" />
-      <TextField fx:id="nomeField" layoutX="25.0" layoutY="120.0" />
-      <TextField fx:id="cpfField" layoutX="24.0" layoutY="64.0" />
-      <ChoiceBox fx:id="sexoField" layoutX="25.0" layoutY="232.0" prefWidth="150.0" />
-      <Button layoutX="199.0" layoutY="64.0" mnemonicParsing="false" onAction="#encontrar" text="Encontrar" />
-      <Button layoutX="240.0" layoutY="290.0" mnemonicParsing="false" onAction="#excluir" text="Excluir" />
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+      <Button layoutX="448.0" layoutY="332.0" mnemonicParsing="false" onAction="#modificar" prefHeight="50.0" prefWidth="100.0" text="Editar cadastro" textAlignment="CENTER" wrapText="true" />
+      <Text layoutX="8.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="454.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="26.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="477.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="346.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idade:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="26.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="38.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <TextField fx:id="endField" layoutX="75.0" layoutY="283.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="364.0" />
+      <TextField fx:id="telField" layoutX="520.0" layoutY="283.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="emailField" layoutX="75.0" layoutY="221.0" prefHeight="25.0" prefWidth="240.0" />
+      <TextField fx:id="idadeField" layoutX="389.0" layoutY="221.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="nomeField" layoutX="75.0" layoutY="153.0" prefHeight="25.0" prefWidth="593.0" />
+      <TextField fx:id="cpfField" layoutX="75.0" layoutY="94.0" prefHeight="25.0" prefWidth="150.0" promptText="Somente números" />
+      <ChoiceBox fx:id="sexoField" layoutX="520.0" layoutY="221.0" prefWidth="150.0" />
+      <Button layoutX="230.0" layoutY="93.0" mnemonicParsing="false" onAction="#encontrar" text="Procurar" />
+      <Button layoutX="570.0" layoutY="332.0" mnemonicParsing="false" onAction="#excluir" prefHeight="50.0" prefWidth="100.0" text="Excluir cadastro" textAlignment="CENTER" wrapText="true" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="700.0">
          <menus>
             <Menu mnemonicParsing="false" text="Inicio">
                <items>
@@ -61,5 +82,10 @@
             </Menu>
          </menus>
       </MenuBar>
+      <Label alignment="CENTER" layoutX="180.0" layoutY="39.0" prefHeight="33.0" prefWidth="340.0" text=" Alteração do cadastro do cliente" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
