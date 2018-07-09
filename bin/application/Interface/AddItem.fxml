@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerAddItem">
+   <children>
+      <RadioButton layoutX="14.0" layoutY="63.0" mnemonicParsing="false" onAction="#showConsole" text="Console">
+         <toggleGroup>
+            <ToggleGroup fx:id="tipos" />
+         </toggleGroup></RadioButton>
+      <Pane fx:id="consolePane" layoutX="97.0" layoutY="32.0" prefHeight="363.0" prefWidth="506.0" visible="false">
+         <children>
+            <TextArea fx:id="consoleDesc" layoutX="15.0" layoutY="182.0" prefHeight="92.0" prefWidth="149.0" />
+            <Text layoutX="15.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descriçao" />
+            <TextField fx:id="consolePre" layoutX="214.0" layoutY="27.0" />
+            <Text layoutX="214.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço" />
+            <TextField fx:id="consoleMar" layoutX="15.0" layoutY="27.0" />
+            <TextField fx:id="consoleMod" layoutX="214.0" layoutY="77.0" />
+            <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca" />
+            <Text layoutX="214.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo" />
+            <TextField fx:id="consoleCor" layoutX="15.0" layoutY="77.0" />
+            <TextField fx:id="consoleMem" layoutX="214.0" layoutY="127.0" />
+            <Text layoutX="14.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cor" />
+            <Text layoutX="214.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memória" />
+            <TextField fx:id="consoleCtr" layoutX="15.0" layoutY="127.0" />
+            <TextField fx:id="consoleEst" layoutX="214.0" layoutY="182.0" />
+            <Text layoutX="14.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controles" />
+            <Text layoutX="214.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque" />
+            <Button layoutX="188.0" layoutY="337.0" mnemonicParsing="false" onAction="#adicionarC" text="Adicionar" />
+         </children>
+      </Pane>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="603.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Inicio">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenInicio" text="Pagina inicial" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Estoque">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenEstoque" text="Ver estoque" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenAddItem" text="Adicionar item" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenModItem" text="Modificar item" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Venda">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenVenda" text="Iniciar venda" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Funcionarios">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenVerFunc" text="Ver funcionarios" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenAddFunc" text="Adicionar funcionarios" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenModFunc" text="Modificar funcionarios" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Clientes">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenVerCliente" text="Ver clientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenAddCliente" text="Adicionar clientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenModCliente" text="Modificar clientes" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Pane fx:id="jogoPane" layoutX="97.0" layoutY="32.0" prefHeight="363.0" prefWidth="506.0" visible="false">
+         <children>
+            <TextArea fx:id="jogoDesc" layoutX="14.0" layoutY="182.0" prefHeight="92.0" prefWidth="149.0" />
+            <Text layoutX="14.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descriçao" />
+            <TextField fx:id="jogoPre" layoutX="171.0" layoutY="27.0" />
+            <Text layoutX="171.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço" />
+            <TextField fx:id="jogoTit" layoutX="14.0" layoutY="27.0" />
+            <TextField fx:id="jogoPro" layoutX="171.0" layoutY="77.0" />
+            <Text layoutX="13.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo" />
+            <Text layoutX="171.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produtora" />
+            <TextField fx:id="jogoGen" layoutX="14.0" layoutY="77.0" />
+            <TextField fx:id="jogoPla" layoutX="171.0" layoutY="127.0" />
+            <Text layoutX="13.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gênero" />
+            <Text layoutX="171.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plataforma" />
+            <TextField fx:id="jogoIdi" layoutX="14.0" layoutY="127.0" />
+            <Text layoutX="13.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idioma" />
+            <Button layoutX="188.0" layoutY="337.0" mnemonicParsing="false" onAction="#adicionarJ" text="Adicionar" />
+            <TextField fx:id="jogoAno" layoutX="171.0" layoutY="182.0" />
+            <Text layoutX="172.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano de lançamento" />
+            <Pane fx:id="digitalPane" layoutX="332.0" layoutY="8.0" prefHeight="153.0" prefWidth="149.0" visible="false">
+               <children>
+                  <TextField fx:id="digitalTam" layoutY="72.0" />
+                  <Text layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tamanho" />
+                  <TextField fx:id="digitalIns" layoutY="121.0" />
+                  <Text layoutX="1.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instruções" />
+                  <TextField fx:id="digitalKey" layoutX="1.0" layoutY="17.0" />
+                  <Text layoutX="1.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key" />
+               </children>
+            </Pane>
+            <Pane fx:id="fisicoPane" layoutX="171.0" layoutY="224.0" prefHeight="50.0" prefWidth="149.0" visible="false">
+               <children>
+                  <TextField fx:id="fisicoEst" layoutY="24.0" />
+                  <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque" />
+               </children>
+            </Pane>
+            <RadioButton layoutX="353.0" layoutY="178.0" mnemonicParsing="false" onAction="#showFisico" text="Jogo Fisico">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tiposJ" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="353.0" layoutY="195.0" mnemonicParsing="false" onAction="#showDigital" text="Jogo digital" toggleGroup="$tiposJ" />
+            <RadioButton layoutX="353.0" layoutY="212.0" mnemonicParsing="false" onAction="#showAmbos" text="Ambos" toggleGroup="$tiposJ" />
+         </children>
+      </Pane>
+      <RadioButton layoutX="14.0" layoutY="80.0" mnemonicParsing="false" onAction="#showJogo" text="Jogo" toggleGroup="$tipos" />
+   </children>
+</AnchorPane>

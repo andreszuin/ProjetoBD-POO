@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerVenda">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Inicio">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenInicio" text="Pagina inicial" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Estoque">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenEstoque" text="Ver estoque" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenAddItem" text="Adicionar item" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenModItem" text="Modificar item" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Venda">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenVenda" text="Iniciar venda" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Funcionarios">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenVerFunc" text="Ver funcionarios" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenAddFunc" text="Adicionar funcionarios" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenModFunc" text="Modificar funcionarios" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Clientes">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenVerCliente" text="Ver clientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenAddCliente" text="Adicionar clientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenModCliente" text="Modificar clientes" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Pane fx:id="vendaPane" layoutX="-1.0" layoutY="28.0" prefHeight="371.0" prefWidth="600.0" visible="false">
+         <children>
+            <Button layoutX="300.0" layoutY="61.0" mnemonicParsing="false" onAction="#adicionarItem" text="Adicionar" />
+            <TableView fx:id="tabela_estoque" layoutX="39.0" layoutY="10.0" prefHeight="352.0" prefWidth="200.0">
+               <columns>
+                  <TableColumn fx:id="colId" prefWidth="83.0" text="id" />
+                  <TableColumn fx:id="colNome" prefWidth="116.0" text="nome" />
+               </columns>
+            </TableView>
+            <TextField fx:id="idField" layoutX="247.0" layoutY="36.0" />
+            <Text layoutX="247.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" />
+            <TextField fx:id="totalField" editable="false" layoutX="415.0" layoutY="172.0" />
+            <Text layoutX="415.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total a pagar" />
+            <Button layoutX="303.0" layoutY="340.0" mnemonicParsing="false" onAction="#finalizarCompra" text="Finalizar" />
+            <TextArea fx:id="produtosText" editable="false" layoutX="415.0" layoutY="14.0" prefHeight="129.0" prefWidth="172.0" />
+            <TextField fx:id="pagoField" layoutX="415.0" layoutY="236.0" />
+            <Text layoutX="415.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor pago" />
+         </children>
+      </Pane>
+      <Pane fx:id="inicialPane" layoutX="14.0" layoutY="28.0" prefHeight="200.0" prefWidth="576.0">
+         <children>
+            <TextField fx:id="idFunc" layoutX="14.0" layoutY="27.0" />
+            <TextField fx:id="cpfCli" layoutX="214.0" layoutY="27.0" />
+            <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id do funcionario" />
+            <Text layoutX="214.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cpf do cliente" />
+            <Button layoutX="242.0" layoutY="135.0" mnemonicParsing="false" onAction="#iniciarCompra" text="Iniciar compra" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

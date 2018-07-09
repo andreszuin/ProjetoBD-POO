@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerModFunc">
+   <children>
+      <Text layoutX="34.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" />
+      <TextField fx:id="idField" layoutX="34.0" layoutY="80.0" />
+      <TextField fx:id="cpfField" editable="false" layoutX="35.0" layoutY="135.0" />
+      <TextField fx:id="nomeField" layoutX="35.0" layoutY="191.0" />
+      <TextField fx:id="idadeField" layoutX="35.0" layoutY="248.0" />
+      <TextField fx:id="emailField" layoutX="213.0" layoutY="135.0" />
+      <TextField fx:id="telField" layoutX="213.0" layoutY="191.0" />
+      <TextField fx:id="endField" layoutX="213.0" layoutY="248.0" />
+      <Text layoutX="35.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF" />
+      <Text layoutX="34.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+      <Text layoutX="34.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idade" />
+      <Text layoutX="34.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo" />
+      <ChoiceBox fx:id="sexoField" layoutX="35.0" layoutY="303.0" prefWidth="150.0" />
+      <Text layoutX="213.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail" />
+      <Text layoutX="213.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone" />
+      <Text layoutX="213.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço" />
+      <Button layoutX="84.0" layoutY="361.0" mnemonicParsing="false" onAction="#modificar" text="Editar" />
+      <Button layoutX="212.0" layoutY="80.0" mnemonicParsing="false" onAction="#encontrar" text="Encontrar" />
+      <Button layoutX="255.0" layoutY="361.0" mnemonicParsing="false" onAction="#excluir" text="Excluir" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Inicio">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenInicio" text="Pagina inicial" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Estoque">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenEstoque" text="Ver estoque" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenAddItem" text="Adicionar item" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenModItem" text="Modificar item" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Venda">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenVenda" text="Iniciar venda" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Funcionarios">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenVerFunc" text="Ver funcionarios" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenAddFunc" text="Adicionar funcionarios" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenModFunc" text="Modificar funcionarios" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Clientes">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OpenVerCliente" text="Ver clientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenAddCliente" text="Adicionar clientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenModCliente" text="Modificar clientes" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
