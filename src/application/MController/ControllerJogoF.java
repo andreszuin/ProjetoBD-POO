@@ -10,7 +10,9 @@ import java.sql.SQLException;
 
 public class ControllerJogoF {
     Conecta conex = new Conecta();
-    /**adiciona os dados recebidos ao banco de dados*/
+    /**adiciona os dados recebidos ao banco de dados
+     * @param jf objeto jogo fisico
+     * @param id id do produto*/
     public void addJogoF(JogoFisico jf,Integer id){
         conex.conexao();
         try{
@@ -23,7 +25,8 @@ public class ControllerJogoF {
         }
         conex.desconnect();
     }
-    /**modifica os dados do banco de dados com os dados recebidos*/
+    /**modifica os dados do banco de dados com os dados recebidos
+     * @param jf objeto jogo fisico*/
     public void modJogoF(JogoFisico jf){
         conex.conexao();
         try{
@@ -50,7 +53,8 @@ public class ControllerJogoF {
         }
         conex.desconnect();
     }
-    /**exclui os dados do banco de dados de acordo com os dados recebidos*/
+    /**exclui os dados do banco de dados de acordo com os dados recebidos
+     * @param jf objeto jogo fisico*/
     public void excJogoF(JogoFisico jf){
         conex.conexao();
         try {

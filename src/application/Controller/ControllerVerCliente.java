@@ -26,7 +26,8 @@ public class ControllerVerCliente extends ControllerMaster{
         colCPF.setCellValueFactory(new PropertyValueFactory<TabelaClientes,String>("cpf"));
         tabela_clientes.getItems().setAll(lista());
     }
-    /**cria uma lista com os itens necessarios para popular a tabela*/
+    /**cria uma lista com os itens necessarios para popular a tabela
+     * @return membros da lista*/
     private List<TabelaClientes> lista(){
         conex.conexao();
         List membros = new LinkedList();

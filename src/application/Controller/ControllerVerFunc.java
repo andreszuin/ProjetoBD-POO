@@ -28,7 +28,8 @@ public class ControllerVerFunc extends ControllerMaster{
         colCPF.setCellValueFactory(new PropertyValueFactory<TabelaFuncionarios,String>("cpf"));
         tabela_funcionarios.getItems().setAll(lista());
     }
-    /**cria uma lista com os itens necessarios para popular a tabela*/
+    /**cria uma lista com os itens necessarios para popular a tabela
+     * @return membros da lista*/
     private List<TabelaFuncionarios> lista(){
         conex.conexao();
         List membros = new LinkedList();

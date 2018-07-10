@@ -9,7 +9,8 @@ import java.sql.SQLException;
 
 public class ControllerPessoa {
     Conecta conex = new Conecta();
-    /**adiciona os dados recebidos ao banco de dados*/
+    /**adiciona os dados recebidos ao banco de dados
+     * @param cliente objeto pessoa*/
     public void addCliente(Pessoa cliente){
         conex.conexao();
         try{
@@ -27,7 +28,8 @@ public class ControllerPessoa {
         }
         conex.desconnect();
     }
-    /**modifica os dados do banco de dados com os dados recebidos*/
+    /**modifica os dados do banco de dados com os dados recebidos
+     * @param cliente objeto pessoa*/
     public void modCliente(Pessoa cliente){
         conex.conexao();
         try{
@@ -45,7 +47,8 @@ public class ControllerPessoa {
         }
         conex.desconnect();
     }
-    /**exclui os dados do banco de dados de acordo com os dados recebidos*/
+    /**exclui os dados do banco de dados de acordo com os dados recebidos
+     * @param cliente objeto pessoa*/
     public void excCliente(Pessoa cliente){
         conex.conexao();
         try {

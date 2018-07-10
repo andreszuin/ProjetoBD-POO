@@ -10,7 +10,9 @@ import java.sql.SQLException;
 public class ControllerNotaFiscal {
     Conecta conex = new Conecta();
     private Integer cod;
-    /**adiciona os dados recebidos ao banco de dados*/
+    /**adiciona os dados recebidos ao banco de dados
+     * @param nf objeto nota fiscal
+     * @param prods lista de produtos*/
     public void criar(NotaFiscal nf,String prods){
         conex.conexao();
         try{

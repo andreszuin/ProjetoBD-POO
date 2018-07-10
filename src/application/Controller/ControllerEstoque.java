@@ -28,7 +28,8 @@ public class ControllerEstoque extends ControllerMaster{
         colDesc.setCellValueFactory(new PropertyValueFactory<TabelaEstoque,String>("desc"));
         tabela_estoque.getItems().setAll(lista());
     }
-    /**cria uma lista com os itens necessarios para popular a tabela*/
+    /**cria uma lista com os itens necessarios para popular a tabela
+     * @return membros da lista*/
     private List<TabelaEstoque> lista(){
         conex.conexao();
         List membros = new LinkedList();
