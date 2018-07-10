@@ -80,7 +80,7 @@
             </Menu>
          </menus>
       </MenuBar>
-      <Label alignment="CENTER" layoutX="217.0" layoutY="37.0" prefHeight="33.0" prefWidth="267.0" text="Cadastro de Funcionário" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutY="37.0" prefHeight="33.0" prefWidth="700.0" text="Cadastro de Funcionário" textAlignment="CENTER">
          <font>
             <Font size="18.0" />
          </font>

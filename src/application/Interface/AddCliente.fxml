@@ -80,7 +80,7 @@
             <Font size="14.0" />
          </font></Text>
       <Button layoutX="562.0" layoutY="324.0" mnemonicParsing="false" onAction="#adicionar" prefHeight="50.0" prefWidth="110.0" text="Concluir cadastro" />
-      <Label alignment="CENTER" layoutX="217.0" layoutY="36.0" prefHeight="33.0" prefWidth="267.0" text="Cadastro de Cliente" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutY="36.0" prefHeight="33.0" prefWidth="700.0" text="Cadastro de Cliente" textAlignment="CENTER">
          <font>
             <Font size="18.0" />
          </font>
