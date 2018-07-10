@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,9 +9,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerMenu">
+<AnchorPane maxHeight="400.0" maxWidth="700.0" minHeight="400.0" minWidth="700.0" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerMenu">
    <children>
-      <MenuBar layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="900.0">
+      <MenuBar layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="700.0">
          <menus>
             <Menu mnemonicParsing="false" text="Inicio">
                <items>
@@ -44,5 +46,14 @@
             </Menu>
          </menus>
       </MenuBar>
+      <Pane layoutY="27.0" prefHeight="375.0" prefWidth="700.0">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/ianba/Documents/GitHub/ProjetoBD-POO/HaloGames.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Pane>
    </children>
 </AnchorPane>

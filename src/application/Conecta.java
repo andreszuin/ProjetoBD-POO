@@ -8,7 +8,7 @@ public class Conecta {
     private String driver = "org.postgresql.Driver";
     private String caminho = "jdbc:postgresql://localhost:5432/Dados";
     private String usuario = "postgres";
-    private String senha = "postgres";
+    private String senha = "aula321";
     public Connection conn;
     /**realiza a conexão com o banco de dados*/
     public void conexao(){
