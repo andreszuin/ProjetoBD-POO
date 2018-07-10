@@ -6,15 +6,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerVerCliente">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerVerCliente">
    <children>
-      <TableView fx:id="tabela_clientes" layoutY="27.0" prefHeight="400.0" prefWidth="700.0">
+      <TableView fx:id="tabela_clientes" layoutY="27.0" prefHeight="578.0" prefWidth="600.0">
         <columns>
           <TableColumn fx:id="colCPF" prefWidth="172.0" text="CPF" />
           <TableColumn fx:id="colNome" prefWidth="427.0" text="Nome" />
         </columns>
       </TableView>
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="700.0">
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
          <menus>
             <Menu mnemonicParsing="false" text="Inicio">
                <items>

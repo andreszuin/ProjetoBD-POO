@@ -4,10 +4,7 @@ import application.Conecta;
 import application.MController.ControllerNotaFiscal;
 import application.MController.ControllerPedido;
 import application.MController.ControllerPedidoProduto;
-import application.Model.NotaFiscal;
-import application.Model.Pedido;
-import application.Model.PedidoProduto;
-import application.Model.TabelaEstoque;
+import application.Model.*;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
@@ -44,22 +41,32 @@ public class ControllerVenda extends ControllerMaster{
     ControllerPedidoProduto controlPP = new ControllerPedidoProduto();
     NotaFiscal nf = new NotaFiscal();
     ControllerNotaFiscal controlNF = new ControllerNotaFiscal();
+    //estoque
     public TableView<TabelaEstoque> tabela_estoque;
-    public TableColumn<TabelaEstoque,Integer> colId;
-    public TableColumn<TabelaEstoque,String> colNome;
-
+    public TableColumn<TabelaEstoque,Integer> colIdE;
+    public TableColumn<TabelaEstoque,String> colNomeE;
+    //funcionarios
+    public TableView<TabelaFuncionarios> tabela_funcionarios;
+    public TableColumn<TabelaFuncionarios,Integer>colIdF;
+    public TableColumn<TabelaFuncionarios,String> colNomeF;
+    //clientes
+    public TableView<TabelaClientes> tabela_clientes;
+    public TableColumn<TabelaClientes,String> colNomeC;
+    public TableColumn<TabelaClientes,String>colCPFC;
 
     public void initialize(){
-        atuTabela();
+        atuTabelaE();
+        atuTabelaF();
+        atuTabelaC();
     }
 
-    public void atuTabela(){
-        colId.setCellValueFactory(new PropertyValueFactory<TabelaEstoque,Integer>("Id"));
-        colNome.setCellValueFactory(new PropertyValueFactory<TabelaEstoque,String>("nome"));
-        tabela_estoque.getItems().setAll(lista());
+    public void atuTabelaE(){
+        colIdE.setCellValueFactory(new PropertyValueFactory<TabelaEstoque,Integer>("Id"));
+        colNomeE.setCellValueFactory(new PropertyValueFactory<TabelaEstoque,String>("nome"));
+        tabela_estoque.getItems().setAll(listaE());
     }
 
-    private List<TabelaEstoque> lista(){
+    private List<TabelaEstoque> listaE(){
         conex.conexao();
         List membros = new LinkedList();
         try{
@@ -69,6 +76,58 @@ public class ControllerVenda extends ControllerMaster{
                 String nome = conex.rs.getString(2);
                 TabelaEstoque tabm = new TabelaEstoque();
                 tabm.setId(id);
+                tabm.setNome(nome);
+                membros.add(tabm);
+            }
+        }catch (SQLException ex){
+            JOptionPane.showMessageDialog(null,"erro na coisinha de adicionar a tabela\nerro:"+ex);
+        }
+        conex.desconnect();
+        return membros;
+    }
+
+    public void atuTabelaF(){
+        colIdF.setCellValueFactory(new PropertyValueFactory<TabelaFuncionarios,Integer>("Id"));
+        colNomeF.setCellValueFactory(new PropertyValueFactory<TabelaFuncionarios,String>("nome"));
+        tabela_funcionarios.getItems().setAll(listaF());
+    }
+
+    private List<TabelaFuncionarios> listaF(){
+        conex.conexao();
+        List membros = new LinkedList();
+        try{
+            conex.executa("select * from funcionario");
+            while(conex.rs.next()){
+                Integer id = conex.rs.getInt(2);
+                String nome = conex.rs.getString(3);
+                TabelaFuncionarios tabm = new TabelaFuncionarios();
+                tabm.setId(id);
+                tabm.setNome(nome);
+                membros.add(tabm);
+            }
+        }catch (SQLException ex){
+            JOptionPane.showMessageDialog(null,"erro na coisinha de adicionar a tabela\nerro:"+ex);
+        }
+        conex.desconnect();
+        return membros;
+    }
+
+    public void atuTabelaC(){
+        colNomeC.setCellValueFactory(new PropertyValueFactory<TabelaClientes,String>("nome"));
+        colCPFC.setCellValueFactory(new PropertyValueFactory<TabelaClientes,String>("cpf"));
+        tabela_clientes.getItems().setAll(listaC());
+    }
+
+    private List<TabelaClientes> listaC(){
+        conex.conexao();
+        List membros = new LinkedList();
+        try{
+            conex.executa("select * from cliente");
+            while(conex.rs.next()){
+                String nome = conex.rs.getString(2);
+                String cpf = conex.rs.getString(1);
+                TabelaClientes tabm = new TabelaClientes();
+                tabm.setCpf(cpf);
                 tabm.setNome(nome);
                 membros.add(tabm);
             }
@@ -97,7 +156,7 @@ public class ControllerVenda extends ControllerMaster{
             conex.executa("select * from produto where prodid='" +Integer.parseInt(idField.getText())+ "'");
             conex.rs.first();
             nome = conex.rs.getString("nome");
-            preco = conex.rs.getBigDecimal("preço").doubleValue();
+            preco = conex.rs.getBigDecimal("preÃ§o").doubleValue();
         }catch(SQLException ex){
             JOptionPane.showMessageDialog(null,"erro ao obter os dados\n erro:"+ex);
         }
