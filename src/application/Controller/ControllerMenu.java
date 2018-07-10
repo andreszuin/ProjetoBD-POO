@@ -7,5 +7,4 @@ public class ControllerMenu extends ControllerMaster{
 	
 	@FXML
 	ImageView ImageTelaInicial;
-	
 }
