@@ -87,7 +87,7 @@
             </Menu>
          </menus>
       </MenuBar>
-      <Label alignment="CENTER" layoutY="35.0" prefHeight="33.0" prefWidth="700.0" text="Alteração do cadastro do Cliente" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutY="35.0" prefHeight="33.0" prefWidth="700.0" text="Alteração do cadastro do Funcionário" textAlignment="CENTER">
          <font>
             <Font size="18.0" />
          </font>
