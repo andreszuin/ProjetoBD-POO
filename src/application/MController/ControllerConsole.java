@@ -9,7 +9,8 @@ import java.sql.SQLException;
 
 public class ControllerConsole {
     Conecta conex = new Conecta();
-    /**adiciona os dados recebidos ao banco de dados*/
+    /**adiciona os dados recebidos ao banco de dados
+     * @param con */
     public void addConsole(Console con){
         conex.conexao();
         try{
@@ -34,7 +35,8 @@ public class ControllerConsole {
         }
         conex.desconnect();
     }
-    /**modifica os dados do banco de dados com os dados recebidos*/
+    /**modifica os dados do banco de dados com os dados recebidos
+     * @param con*/
     public void modConsole(Console con){
         conex.conexao();
         try{
@@ -57,7 +59,8 @@ public class ControllerConsole {
         }
         conex.desconnect();
     }
-    /**exclui os dados do banco de dados de acordo com os dados recebidos*/
+    /**exclui os dados do banco de dados de acordo com os dados recebidos
+     * @param con */
     public void excConsole(Console con){
         conex.conexao();
         try {

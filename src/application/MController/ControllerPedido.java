@@ -10,7 +10,8 @@ import java.sql.SQLException;
 
 public class ControllerPedido {
     Conecta conex = new Conecta();
-    /**adiciona os dados recebidos ao banco de dados*/
+    /**adiciona os dados recebidos ao banco de dados
+     * @param p */
     public int addPedido(Pedido p){
         conex.conexao();
         Integer cod=0;
@@ -29,7 +30,8 @@ public class ControllerPedido {
         conex.desconnect();
         return cod;
     }
-    /**adiciona os dados recebidos ao banco de dados*/
+    /**adiciona os dados recebidos ao banco de dados
+     * @param p */
     public void addTotal(Pedido p){
         conex.conexao();
         try{

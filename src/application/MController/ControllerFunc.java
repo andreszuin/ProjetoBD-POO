@@ -9,7 +9,8 @@ import java.sql.SQLException;
 
 public class ControllerFunc {
     Conecta conex = new Conecta();
-    /**adiciona os dados recebidos ao banco de dados*/
+    /**adiciona os dados recebidos ao banco de dados
+     * @param func */
     public void addFunc(Funcionario func){
         conex.conexao();
         try{
@@ -27,7 +28,8 @@ public class ControllerFunc {
         }
         conex.desconnect();
     }
-    /**modifica os dados do banco de dados com os dados recebidos*/
+    /**modifica os dados do banco de dados com os dados recebidos
+     * @param func */
     public void modFunc(Funcionario func){
         conex.conexao();
         try{
@@ -45,7 +47,8 @@ public class ControllerFunc {
         }
         conex.desconnect();
     }
-    /**exclui os dados do banco de dados de acordo com os dados recebidos*/
+    /**exclui os dados do banco de dados de acordo com os dados recebidos
+     * @param func */
     public void excFunc(Funcionario func){
         conex.conexao();
         try {

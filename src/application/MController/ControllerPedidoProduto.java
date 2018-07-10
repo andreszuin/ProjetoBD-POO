@@ -9,7 +9,8 @@ import java.sql.SQLException;
 
 public class ControllerPedidoProduto {
     Conecta conex = new Conecta();
-    /**adiciona os dados recebidos ao banco de dados*/
+    /**adiciona os dados recebidos ao banco de dados
+     * @param pp */
     public void criar(PedidoProduto pp){
         conex.conexao();
         try{
