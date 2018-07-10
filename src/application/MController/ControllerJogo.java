@@ -21,7 +21,7 @@ public class ControllerJogo {
     public void addJogo(Jogo j, JogoFisico jf){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,preço,descricao)values(?,?,?)");
+            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,preco,descricao)values(?,?,?)");
             pst.setString(1,j.getNome());
             pst.setBigDecimal(2,j.getPreco());
             pst.setString(3,j.getDescricao());
@@ -49,7 +49,7 @@ public class ControllerJogo {
     public void addJogo(Jogo j, JogoDigital jd){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,preço,descricao)values(?,?,?)");
+            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,preco,descricao)values(?,?,?)");
             pst.setString(1,j.getNome());
             pst.setBigDecimal(2,j.getPreco());
             pst.setString(3,j.getDescricao());
@@ -78,7 +78,7 @@ public class ControllerJogo {
     public void addJogo(Jogo j, JogoFisico jf, JogoDigital jd){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,preço,descricao)values(?,?,?)");
+            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,preco,descricao)values(?,?,?)");
             pst.setString(1,j.getNome());
             pst.setBigDecimal(2,j.getPreco());
             pst.setString(3,j.getDescricao());

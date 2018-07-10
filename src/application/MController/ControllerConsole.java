@@ -14,7 +14,7 @@ public class ControllerConsole {
     public void addConsole(Console con){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,preço,descricao)values(?,?,?)");
+            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,preco,descricao)values(?,?,?)");
             pst.setString(1,con.getNome());
             pst.setBigDecimal(2,con.getPreco());
             pst.setString(3,con.getDescricao());
@@ -40,7 +40,7 @@ public class ControllerConsole {
     public void modConsole(Console con){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("update produto set nome=?, preço=?, descricao=? where prodid=?");
+            PreparedStatement pst = conex.conn.prepareStatement("update produto set nome=?, preco=?, descricao=? where prodid=?");
             pst.setString(1,con.getNome());
             pst.setBigDecimal(2,con.getPreco());
             pst.setString(3,con.getDescricao());

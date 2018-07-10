@@ -31,7 +31,7 @@ public class ControllerJogoD {
     public void modJogoD(JogoDigital jd){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("update produto set nome=?, preço=?, descricao=? where prodid=?");
+            PreparedStatement pst = conex.conn.prepareStatement("update produto set nome=?, preco=?, descricao=? where prodid=?");
             pst.setString(1,jd.getNome());
             pst.setBigDecimal(2,jd.getPreco());
             pst.setString(3,jd.getDescricao());
