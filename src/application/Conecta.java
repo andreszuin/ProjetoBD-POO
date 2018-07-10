@@ -23,7 +23,7 @@ public class Conecta {
         }
     }
     /**executa strings de sql
-     * @param sql */
+     * @param sql linha de sql*/
     public void executa(String sql){
         try {
             stm = conn.createStatement(rs.TYPE_SCROLL_INSENSITIVE, rs.CONCUR_READ_ONLY);

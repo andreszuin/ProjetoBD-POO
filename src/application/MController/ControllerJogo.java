@@ -16,8 +16,8 @@ public class ControllerJogo {
     JogoDigital jd = new JogoDigital();
     ControllerJogoD controlD = new ControllerJogoD();
     /**adiciona os dados recebidos ao banco de dados e chama o controlador de jogo fisico para adicionar dados ao banco de dados
-     * @param j
-     * @param jf */
+     * @param j objeto jogo
+     * @param jf objeto jogo fisico*/
     public void addJogo(Jogo j, JogoFisico jf){
         conex.conexao();
         try{
@@ -44,8 +44,8 @@ public class ControllerJogo {
         conex.desconnect();
     }
     /**adiciona os dados recebidos ao banco de dados e chama o controlador de jogo digital para adicionar dados ao banco de dados
-     * @param j
-     * @param jd */
+     * @param j objeto jogo
+     * @param jd objeto jogo digital*/
     public void addJogo(Jogo j, JogoDigital jd){
         conex.conexao();
         try{
@@ -72,9 +72,9 @@ public class ControllerJogo {
         conex.desconnect();
     }
     /**adiciona os dados recebidos ao banco de dados e chama os controladores de jogo fisico e digital para adicionar dados ao banco de dados
-     * @param j
-     * @param jd
-     * @param jf */
+     * @param j objeto jogo
+     * @param jd objeto jogo digital
+     * @param jf objeto jogo fisico*/
     public void addJogo(Jogo j, JogoFisico jf, JogoDigital jd){
         conex.conexao();
         try{

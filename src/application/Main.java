@@ -11,7 +11,7 @@ import javafx.stage.WindowEvent;
 public class Main extends Application {
 	static Stage mainstage;
 	/**modifica a tela que o usuario vê
-	 * @param scene */
+	 * @param scene javafx scene*/
 	public static void setStageScene(Scene scene){
 		mainstage.setScene(scene);
 	}

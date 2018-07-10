@@ -10,7 +10,7 @@ import java.sql.SQLException;
 public class ControllerConsole {
     Conecta conex = new Conecta();
     /**adiciona os dados recebidos ao banco de dados
-     * @param con */
+     * @param con objeto console*/
     public void addConsole(Console con){
         conex.conexao();
         try{
@@ -36,7 +36,7 @@ public class ControllerConsole {
         conex.desconnect();
     }
     /**modifica os dados do banco de dados com os dados recebidos
-     * @param con*/
+     * @param con objeto console*/
     public void modConsole(Console con){
         conex.conexao();
         try{
@@ -60,7 +60,7 @@ public class ControllerConsole {
         conex.desconnect();
     }
     /**exclui os dados do banco de dados de acordo com os dados recebidos
-     * @param con */
+     * @param con objeto console*/
     public void excConsole(Console con){
         conex.conexao();
         try {

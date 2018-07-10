@@ -66,7 +66,8 @@ public class ControllerVenda extends ControllerMaster{
         colNomeE.setCellValueFactory(new PropertyValueFactory<TabelaEstoque,String>("nome"));
         tabela_estoque.getItems().setAll(listaE());
     }
-    /**cria a lista com os itens para popular a tabela de produtos*/
+    /**cria a lista com os itens para popular a tabela de produtos
+     * @return membros da lista*/
     private List<TabelaEstoque> listaE(){
         conex.conexao();
         List membros = new LinkedList();
@@ -92,7 +93,8 @@ public class ControllerVenda extends ControllerMaster{
         colNomeF.setCellValueFactory(new PropertyValueFactory<TabelaFuncionarios,String>("nome"));
         tabela_funcionarios.getItems().setAll(listaF());
     }
-    /**cria a lista com os itens para popular a tabela de funcionarios*/
+    /**cria a lista com os itens para popular a tabela de funcionarios
+     * @return membros da lista*/
     private List<TabelaFuncionarios> listaF(){
         conex.conexao();
         List membros = new LinkedList();
@@ -118,7 +120,8 @@ public class ControllerVenda extends ControllerMaster{
         colCPFC.setCellValueFactory(new PropertyValueFactory<TabelaClientes,String>("cpf"));
         tabela_clientes.getItems().setAll(listaC());
     }
-    /**cria a lista com os itens para popular a tabela de clientes*/
+    /**cria a lista com os itens para popular a tabela de clientes
+     * @return membros da lista*/
     private List<TabelaClientes> listaC(){
         conex.conexao();
         List membros = new LinkedList();
