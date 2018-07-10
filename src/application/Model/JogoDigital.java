@@ -1,7 +1,6 @@
 package application.Model;
 
 public class JogoDigital extends Jogo{
-    /**classe modelo de jogo digital*/
     protected Double tamanho;
     protected String instrucoes;
     protected String key;

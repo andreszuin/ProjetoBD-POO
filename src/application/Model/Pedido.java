@@ -4,7 +4,6 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Pedido {
-    /**classe modelo de pedido*/
     protected Integer cod;
     protected String cpfC;
     protected Integer idF;

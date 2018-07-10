@@ -6,7 +6,6 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 public class TabelaFuncionarios {
-    /**classe da tabela de funcionarios para transformar os dados recebidos*/
     private IntegerProperty Id;
     public void setId(Integer id){
         IdProperty().set(id);

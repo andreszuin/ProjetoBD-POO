@@ -4,7 +4,6 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 public class TabelaClientes {
-    /**classe da tabela de clientes para transformar os dados recebidos*/
     private StringProperty Cpf;
     public void setCpf(String cpf){
         CpfProperty().set(cpf);

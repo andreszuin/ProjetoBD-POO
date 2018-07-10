@@ -1,7 +1,6 @@
 package application.Model;
 
 public class Pessoa {
-    /**classe modelo de pessoa*/
     protected String nome;
     protected String cpf;
     protected Integer idade;

@@ -3,7 +3,6 @@ import javax.swing.*;
 import java.sql.*;
 
 public class Conecta {
-    /**classe para realizar a conexão com o banco de dados*/
     public Statement stm;
     public ResultSet rs;
     private String driver = "org.postgresql.Driver";

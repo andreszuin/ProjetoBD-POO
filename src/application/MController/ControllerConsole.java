@@ -8,7 +8,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class ControllerConsole {
-    /**controlador da classe console*/
     Conecta conex = new Conecta();
     /**adiciona os dados recebidos ao banco de dados*/
     public void addConsole(Console con){

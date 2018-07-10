@@ -1,7 +1,6 @@
 package application.Model;
 
 public class Console extends Produto{
-    /**classe modelo de console*/
     protected String marca;
     protected String cor;
     protected String memoria;

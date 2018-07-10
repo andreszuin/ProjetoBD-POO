@@ -8,7 +8,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class ControllerNotaFiscal {
-    /**controlador da classe nota fiscal*/
     Conecta conex = new Conecta();
     private Integer cod;
     /**adiciona os dados recebidos ao banco de dados*/

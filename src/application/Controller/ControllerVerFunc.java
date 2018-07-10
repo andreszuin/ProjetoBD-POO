@@ -12,7 +12,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ControllerVerFunc extends ControllerMaster{
-    /**controlador da pagina para ver os funcionarios*/
     public TableView<TabelaFuncionarios> tabela_funcionarios;
     public TableColumn<TabelaFuncionarios,Integer>colId;
     public TableColumn<TabelaFuncionarios,String> colNome;

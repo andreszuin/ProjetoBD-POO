@@ -1,7 +1,6 @@
 package application.Model;
 
 public class Funcionario extends Pessoa{
-    /**classe modelo de pessoa*/
     protected Integer id;
 
     public Integer getId() {

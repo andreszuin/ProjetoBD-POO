@@ -10,7 +10,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class ControllerJogo {
-    /**controlador da classe jogo*/
     Conecta conex = new Conecta();
     JogoFisico jf = new JogoFisico();
     ControllerJogoF controlF = new ControllerJogoF();

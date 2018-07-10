@@ -12,7 +12,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ControllerVerCliente extends ControllerMaster{
-    /**controlador da pagina para ver os clientes*/
     public TableView<TabelaClientes> tabela_clientes;
     public TableColumn<TabelaClientes,String> colNome;
     public TableColumn<TabelaClientes,String>colCPF;

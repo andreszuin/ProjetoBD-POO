@@ -14,7 +14,6 @@ import javafx.scene.layout.Pane;
 import java.math.BigDecimal;
 
 public class ControllerAddItem extends ControllerMaster{
-    /**controlador da pagina de adicionar produtos*/
     public Pane consolePane;
     public Pane fisicoPane;
     public Pane digitalPane;

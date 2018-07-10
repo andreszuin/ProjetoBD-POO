@@ -13,7 +13,6 @@ import javax.swing.*;
 import java.sql.SQLException;
 
 public class ControllerModFunc extends ControllerMaster{
-    /**controlador da pagina de modificar funcionarios*/
     ObservableList<String> sexo = FXCollections.observableArrayList("Masculino","Feminino","Outro");
     @FXML
     public TextField cpfField;

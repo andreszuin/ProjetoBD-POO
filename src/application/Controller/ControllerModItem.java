@@ -17,7 +17,6 @@ import java.math.BigDecimal;
 import java.sql.SQLException;
 
 public class ControllerModItem extends ControllerMaster{
-    /**controlador da pagina de modificar produtos*/
     public Pane consolePane;
     public Pane fisicoPane;
     public Pane digitalPane;

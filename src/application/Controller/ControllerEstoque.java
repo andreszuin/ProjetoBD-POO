@@ -12,7 +12,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ControllerEstoque extends ControllerMaster{
-    /**controlador da pagina de ver o estoque*/
     public TableView<TabelaEstoque> tabela_estoque;
     public TableColumn<TabelaEstoque,Integer> colId;
     public TableColumn<TabelaEstoque,String> colNome;

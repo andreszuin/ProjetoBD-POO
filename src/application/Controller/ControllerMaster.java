@@ -10,7 +10,6 @@ import java.io.IOException;
 public abstract class ControllerMaster {
     Parent root;
     Scene scene;
-    /**controlador para o menu superior de todas as telas*/
     //menu
     /**abre a tela inicial*/
     public void OpenInicio() throws IOException {

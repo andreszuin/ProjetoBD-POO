@@ -9,7 +9,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class ControllerJogoF {
-    /**controlador da classe jogo fisico*/
     Conecta conex = new Conecta();
     /**adiciona os dados recebidos ao banco de dados*/
     public void addJogoF(JogoFisico jf,Integer id){

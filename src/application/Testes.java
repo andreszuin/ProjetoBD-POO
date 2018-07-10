@@ -7,7 +7,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class Testes {
-    /**classe de teste junit*/
     Pedido p = new Pedido();
     NotaFiscal nf = new NotaFiscal();
     @Test

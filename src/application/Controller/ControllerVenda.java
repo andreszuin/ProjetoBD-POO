@@ -21,7 +21,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ControllerVenda extends ControllerMaster{
-    /**controlador da pagina de vendas*/
     public TextField idField;
     public TextField totalField;
     public TextField idFunc;
