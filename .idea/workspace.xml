@@ -10,24 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bd1e2b5-e141-4c72-99c8-457f0a38a98f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/src/application/Conecta.java" afterPath="$PROJECT_DIR$/src/application/Conecta.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/Controller/CampoNulloException.java" afterPath="$PROJECT_DIR$/src/application/Controller/CampoNulloException.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/Controller/ControllerEstoque.java" afterPath="$PROJECT_DIR$/src/application/Controller/ControllerEstoque.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/Controller/ControllerMaster.java" afterPath="$PROJECT_DIR$/src/application/Controller/ControllerMaster.java" />
+      <change beforePath="$PROJECT_DIR$/HaloGames-aula321.jar" afterPath="$PROJECT_DIR$/HaloGames-aula321.jar" />
+      <change beforePath="$PROJECT_DIR$/HaloGames-postgres.jar" afterPath="$PROJECT_DIR$/HaloGames-postgres.jar" />
+      <change beforePath="$PROJECT_DIR$/bin/application/Controller/ControllerMenu.class" afterPath="$PROJECT_DIR$/bin/application/Controller/ControllerMenu.class" />
+      <change beforePath="$PROJECT_DIR$/bin/application/Controller/ControllerVenda.class" afterPath="$PROJECT_DIR$/bin/application/Controller/ControllerVenda.class" />
+      <change beforePath="$PROJECT_DIR$/bin/application/Interface/Menu.fxml" afterPath="$PROJECT_DIR$/bin/application/Interface/Menu.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/application/Controller/ControllerMenu.java" afterPath="$PROJECT_DIR$/src/application/Controller/ControllerMenu.java" />
       <change beforePath="$PROJECT_DIR$/src/application/Controller/ControllerVenda.java" afterPath="$PROJECT_DIR$/src/application/Controller/ControllerVenda.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/Controller/ControllerVerCliente.java" afterPath="$PROJECT_DIR$/src/application/Controller/ControllerVerCliente.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/Controller/ControllerVerFunc.java" afterPath="$PROJECT_DIR$/src/application/Controller/ControllerVerFunc.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/MController/ControllerConsole.java" afterPath="$PROJECT_DIR$/src/application/MController/ControllerConsole.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/MController/ControllerFunc.java" afterPath="$PROJECT_DIR$/src/application/MController/ControllerFunc.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/MController/ControllerJogo.java" afterPath="$PROJECT_DIR$/src/application/MController/ControllerJogo.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/MController/ControllerJogoD.java" afterPath="$PROJECT_DIR$/src/application/MController/ControllerJogoD.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/MController/ControllerJogoF.java" afterPath="$PROJECT_DIR$/src/application/MController/ControllerJogoF.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/MController/ControllerNotaFiscal.java" afterPath="$PROJECT_DIR$/src/application/MController/ControllerNotaFiscal.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/MController/ControllerPedido.java" afterPath="$PROJECT_DIR$/src/application/MController/ControllerPedido.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/MController/ControllerPedidoProduto.java" afterPath="$PROJECT_DIR$/src/application/MController/ControllerPedidoProduto.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/MController/ControllerPessoa.java" afterPath="$PROJECT_DIR$/src/application/MController/ControllerPessoa.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/Main.java" afterPath="$PROJECT_DIR$/src/application/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/application/Interface/Menu.fxml" afterPath="$PROJECT_DIR$/src/application/Interface/Menu.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +32,7 @@
       <file leaf-file-name="ControllerMaster.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerMaster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
+            <state relative-caret-position="0">
               <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding />
             </state>
@@ -52,18 +42,18 @@
       <file leaf-file-name="ControllerEstoque.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerEstoque.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
+            <state relative-caret-position="117">
               <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControllerVenda.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ControllerVenda.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVenda.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="123" column="31" lean-forward="false" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
+            <state relative-caret-position="259">
+              <caret line="195" column="89" lean-forward="true" selection-start-line="195" selection-start-column="89" selection-end-line="195" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -72,31 +62,50 @@
       <file leaf-file-name="ControllerVerCliente.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVerCliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="306">
               <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="HaloGames.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HaloGames.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ControllerVerFunc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVerFunc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
+            <state relative-caret-position="340">
               <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControllerPedido.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ControllerPedido.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/MController/ControllerPedido.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
+            <state relative-caret-position="136">
               <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
               <folding>
-                <marker date="1531196918738" expanded="true" signature="552:615" ph="insert into pedido... " />
-                <marker date="1531196918738" expanded="true" signature="1434:1479" ph="update pedido... " />
+                <marker date="1531237640322" expanded="true" signature="552:615" ph="insert into pedido... " />
+                <marker date="1531237640322" expanded="true" signature="1495:1540" ph="update pedido... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerNotaFiscal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/MController/ControllerNotaFiscal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="31" column="182" lean-forward="false" selection-start-line="31" selection-start-column="182" selection-end-line="31" selection-end-column="182" />
+              <folding>
+                <marker date="1531243064709" expanded="true" signature="567:642" ph="insert into nota_fiscal... " />
               </folding>
             </state>
           </provider>
@@ -159,17 +168,17 @@
         <option value="$PROJECT_DIR$/src/application/MController/ControllerJogo.java" />
         <option value="$PROJECT_DIR$/src/application/MController/ControllerJogoD.java" />
         <option value="$PROJECT_DIR$/src/application/MController/ControllerJogoF.java" />
-        <option value="$PROJECT_DIR$/src/application/MController/ControllerNotaFiscal.java" />
         <option value="$PROJECT_DIR$/src/application/MController/ControllerPedidoProduto.java" />
         <option value="$PROJECT_DIR$/src/application/MController/ControllerPessoa.java" />
         <option value="$PROJECT_DIR$/src/application/Conecta.java" />
         <option value="$PROJECT_DIR$/src/application/Main.java" />
         <option value="$PROJECT_DIR$/src/application/Controller/ControllerMaster.java" />
         <option value="$PROJECT_DIR$/src/application/Controller/ControllerEstoque.java" />
-        <option value="$PROJECT_DIR$/src/application/Controller/ControllerVenda.java" />
         <option value="$PROJECT_DIR$/src/application/Controller/ControllerVerCliente.java" />
         <option value="$PROJECT_DIR$/src/application/Controller/ControllerVerFunc.java" />
         <option value="$PROJECT_DIR$/src/application/MController/ControllerPedido.java" />
+        <option value="$PROJECT_DIR$/src/application/MController/ControllerNotaFiscal.java" />
+        <option value="$PROJECT_DIR$/src/application/Controller/ControllerVenda.java" />
       </list>
     </option>
   </component>
@@ -200,13 +209,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ProjetoBD-POO" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjetoBD-POO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetoBD-POO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetoBD-POO" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjetoBD-POO" type="b2602c69:ProjectViewProjectNode" />
@@ -241,9 +258,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,7 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Testes.trocoTest">
+  <component name="RunManager" selected="JAR Application.HaloGames-postgres.jar">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -406,9 +420,9 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ProjetoBD-POO.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+    <configuration name="HaloGames-postgres.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/classes/artifacts/ProjetoBD_POO_jar/ProjetoBD-POO.jar" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/HaloGames-postgres.jar" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <envs />
     </configuration>
@@ -465,18 +479,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JAR Application.ProjetoBD-POO.jar" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Testes.precoFTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Testes.impostoTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Testes.trocoTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Testes.precoFTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Testes.impostoTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Testes.trocoTest" />
+      <item index="4" class="java.lang.String" itemvalue="JAR Application.HaloGames-postgres.jar" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Testes.trocoTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Testes.impostoTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Testes.precoFTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="4" class="java.lang.String" itemvalue="JAR Application.ProjetoBD-POO.jar" />
+        <item index="0" class="java.lang.String" itemvalue="JAR Application.HaloGames-postgres.jar" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Testes.trocoTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Testes.impostoTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Testes.precoFTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -498,7 +512,9 @@
       <workItem from="1531158819359" duration="2096000" />
       <workItem from="1531183161632" duration="880000" />
       <workItem from="1531184169788" duration="222000" />
-      <workItem from="1531184429440" duration="12530000" />
+      <workItem from="1531184429440" duration="13332000" />
+      <workItem from="1531240691896" duration="3180000" />
+      <workItem from="1531247055757" duration="161000" />
     </task>
     <servers />
   </component>
@@ -514,27 +530,26 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43824000" />
+    <option name="totallyTimeSpent" value="47967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46577382" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46577382" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -545,7 +560,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,21 +576,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/application/MController/ControllerPedido.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="44" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="23" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVenda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Conecta.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -700,19 +702,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Model/JogoPreVenda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Model/JogoPreVenda.java" />
     <entry file="file://$PROJECT_DIR$/src/application/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -763,14 +757,14 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.2542533081285445" x="1327.2788104089211" y="2376.03345724907" />
+          <settings layout="Hierarchic Group" zoom="0.2542533081285445" x="1327.0" y="2376.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
             <Category>Inner Classes</Category>
+            <Category>Constructors</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -781,7 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -821,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,7 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,7 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,7 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -869,7 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -877,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2185">
           <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,7 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-514">
           <caret line="10" column="59" lean-forward="false" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,7 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -949,13 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="62" column="32" lean-forward="false" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-          <folding>
-            <marker date="1531196120666" expanded="true" signature="485:539" ph="insert into produto... " />
-            <marker date="1531196120666" expanded="true" signature="931:1013" ph="insert into console... " />
-            <marker date="1531196120666" expanded="true" signature="1707:1769" ph="update produto... " />
-            <marker date="1531196120666" expanded="true" signature="2028:2111" ph="update console... " />
-            <marker date="1531196120666" expanded="true" signature="2819:2853" ph="delete from produto... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -963,11 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
           <caret line="50" column="37" lean-forward="false" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
-          <folding>
-            <marker date="1531196145131" expanded="true" signature="493:582" ph="insert into funcionario... " />
-            <marker date="1531196145131" expanded="true" signature="1356:1450" ph="update funcionario... " />
-            <marker date="1531196145131" expanded="true" signature="2226:2264" ph="delete from funcionario... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -975,14 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1151">
           <caret line="76" column="35" lean-forward="false" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
-          <folding>
-            <marker date="1531196193586" expanded="true" signature="854:908" ph="insert into produto... " />
-            <marker date="1531196193586" expanded="true" signature="1292:1384" ph="insert into jogo... " />
-            <marker date="1531196193586" expanded="true" signature="2233:2287" ph="insert into produto... " />
-            <marker date="1531196193586" expanded="true" signature="2671:2763" ph="insert into jogo... " />
-            <marker date="1531196193586" expanded="true" signature="3675:3729" ph="insert into produto... " />
-            <marker date="1531196193586" expanded="true" signature="4113:4205" ph="insert into jogo... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -990,13 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="59" column="36" lean-forward="false" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-          <folding>
-            <marker date="1531196233849" expanded="true" signature="535:606" ph="insert into jogodigital... " />
-            <marker date="1531196233849" expanded="true" signature="1224:1286" ph="update produto... " />
-            <marker date="1531196233849" expanded="true" signature="1541:1634" ph="update jogo... " />
-            <marker date="1531196233849" expanded="true" signature="1986:2056" ph="update jogodigital... " />
-            <marker date="1531196233849" expanded="true" signature="2687:2721" ph="delete from produto... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1004,23 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="56" column="35" lean-forward="false" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
-          <folding>
-            <marker date="1531196266355" expanded="true" signature="569:621" ph="insert into jogofisico... " />
-            <marker date="1531196266355" expanded="true" signature="1140:1202" ph="update produto... " />
-            <marker date="1531196266355" expanded="true" signature="1457:1550" ph="update jogo... " />
-            <marker date="1531196266355" expanded="true" signature="1902:1951" ph="update jogofisico... " />
-            <marker date="1531196266355" expanded="true" signature="2483:2517" ph="delete from produto... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MController/ControllerNotaFiscal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding>
-            <marker date="1531196283294" expanded="true" signature="567:642" ph="insert into nota_fiscal... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,9 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <marker date="1531196309857" expanded="true" signature="503:563" ph="insert into pedido_produto... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1038,11 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="50" column="35" lean-forward="false" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
-          <folding>
-            <marker date="1531196334649" expanded="true" signature="489:574" ph="insert into cliente... " />
-            <marker date="1531196334649" expanded="true" signature="1368:1455" ph="update cliente... " />
-            <marker date="1531196334649" expanded="true" signature="2255:2286" ph="delete from cliente... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1058,7 +983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1066,45 +990,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerMaster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
+        <state relative-caret-position="0">
           <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerEstoque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVenda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="123" column="31" lean-forward="false" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVerCliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVerFunc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
+        <state relative-caret-position="340">
           <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding />
         </state>
@@ -1112,12 +1011,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/MController/ControllerPedido.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
+        <state relative-caret-position="136">
           <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding>
-            <marker date="1531196918738" expanded="true" signature="552:615" ph="insert into pedido... " />
-            <marker date="1531196918738" expanded="true" signature="1434:1479" ph="update pedido... " />
+            <marker date="1531237640322" expanded="true" signature="552:615" ph="insert into pedido... " />
+            <marker date="1531237640322" expanded="true" signature="1495:1540" ph="update pedido... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MController/ControllerNotaFiscal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="182" lean-forward="false" selection-start-line="31" selection-start-column="182" selection-end-line="31" selection-end-column="182" />
+          <folding>
+            <marker date="1531243064709" expanded="true" signature="567:642" ph="insert into nota_fiscal... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVerCliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HaloGames.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/application/Controller/ControllerMenu.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerEstoque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVenda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="195" column="89" lean-forward="true" selection-start-line="195" selection-start-column="89" selection-end-line="195" selection-end-column="89" />
+          <folding />
         </state>
       </provider>
     </entry>

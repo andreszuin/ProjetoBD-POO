@@ -199,7 +199,6 @@ public class ControllerVenda extends ControllerMaster{
         controlNF.criar(nf,produtos);
         produtos = null;
         total = 0.00;
-
         vendaPane.setVisible(false);
         inicialPane.setVisible(true);
         cpfCli.setText(null);
