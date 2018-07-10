@@ -10,7 +10,7 @@ import java.sql.SQLException;
 public class ControllerNotaFiscal {
     Conecta conex = new Conecta();
     private Integer cod;
-    public void criar(NotaFiscal nf){
+    public void criar(NotaFiscal nf,String prods){
         conex.conexao();
         try{
             PreparedStatement pst = conex.conn.prepareStatement("insert into nota_fiscal(pedcod,valorrec,valortroco,impostos)values(?,?,?,?)");
@@ -26,6 +26,6 @@ public class ControllerNotaFiscal {
             JOptionPane.showMessageDialog(null,"erro ao inserir os dados\n erro:"+ex);
         }
         conex.desconnect();
-        JOptionPane.showMessageDialog(null,"Nota fiscal nº "+cod+"\nPedido nº "+nf.getPedCod()+"\nValor pago: "+nf.getValorRecebido()+"\nTroco: "+nf.getValorTroco()+"\nImpostos: "+nf.getImpostos());
+        JOptionPane.showMessageDialog(null,"Nota fiscal nº "+cod+"\nPedido nº "+nf.getPedCod()+"\n"+prods+"\nValor pago: "+nf.getValorRecebido()+"\nTroco: "+nf.getValorTroco()+"\nImpostos: "+nf.getImpostos());
     }
 }

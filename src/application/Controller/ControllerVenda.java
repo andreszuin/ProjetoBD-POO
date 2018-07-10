@@ -26,6 +26,7 @@ public class ControllerVenda extends ControllerMaster{
     public TextField idFunc;
     public TextField cpfCli;
     public TextField pagoField;
+    public TextField qtdField;
     private Integer codPedido;
     private String nome;
     private String produtos=null;
@@ -139,17 +140,25 @@ public class ControllerVenda extends ControllerMaster{
     }
 
     public void iniciarCompra(){
-        p.setCpfC(cpfCli.getText());
-        p.setIdF(Integer.parseInt(idFunc.getText()));
-        p.setData(LocalDate.now());
-        codPedido = controlP.addPedido(p);
-        inicialPane.setVisible(false);
-        vendaPane.setVisible(true);
+        try {
+            if(idFunc.getText().equals("") || cpfCli.getText().equals("")){
+                throw new CampoNulloException("Um dos campos está vazio");
+            }
+            p.setCpfC(cpfCli.getText());
+            p.setIdF(Integer.parseInt(idFunc.getText()));
+            p.setData(LocalDate.now());
+            codPedido = controlP.addPedido(p);
+            inicialPane.setVisible(false);
+            vendaPane.setVisible(true);
+        }catch(CampoNulloException cn){
+            JOptionPane.showMessageDialog(null,"Um dos campos está vazio");
+        }
     }
 
     public void adicionarItem(){
         pp.setCodPed(codPedido);
         pp.setProdid(Integer.parseInt(idField.getText()));
+        pp.setQuant(Integer.parseInt(qtdField.getText()));
         controlPP.criar(pp);
         conex.conexao();
         try{
@@ -160,12 +169,12 @@ public class ControllerVenda extends ControllerMaster{
         }catch(SQLException ex){
             JOptionPane.showMessageDialog(null,"erro ao obter os dados\n erro:"+ex);
         }
-        total+=preco;
+        total+=preco*Integer.parseInt(qtdField.getText());
         if(produtos==null){
-            produtos=nome;
+            produtos=nome+" "+qtdField.getText()+"  "+String.valueOf(preco*Integer.parseInt(qtdField.getText()));
         }
         else {
-            produtos += "\n" + nome;
+            produtos += "\n" + nome+"       "+qtdField.getText()+"       "+String.valueOf(preco*Integer.parseInt(qtdField.getText()));
         }
         totalField.setText(String.valueOf(total+total*0.15));
         produtosText.setText(produtos);
@@ -173,14 +182,14 @@ public class ControllerVenda extends ControllerMaster{
 
     public void finalizarCompra(){
         p.setCod(codPedido);
-        p.setPrecoF(BigDecimal.valueOf(total+total*0.15));
+        p.setPrecoF(total);
         controlP.addTotal(p);
 
         nf.setPedCod(codPedido);
         nf.setValorRecebido(BigDecimal.valueOf(Double.parseDouble(pagoField.getText())));
-        nf.setValorTroco(BigDecimal.valueOf((total+total*0.15)-Double.parseDouble(pagoField.getText())));
-        nf.setImpostos(BigDecimal.valueOf(total*0.15));
-        controlNF.criar(nf);
+        nf.setValorTroco(total,Double.parseDouble(pagoField.getText()));
+        nf.setImpostos(total);
+        controlNF.criar(nf,produtos);
 
         vendaPane.setVisible(false);
         inicialPane.setVisible(true);

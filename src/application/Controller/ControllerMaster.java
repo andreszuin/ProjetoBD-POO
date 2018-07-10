@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 
 import java.io.IOException;
 
-public class ControllerMaster {
+public abstract class ControllerMaster {
     Parent root;
     Scene scene;
     //menu

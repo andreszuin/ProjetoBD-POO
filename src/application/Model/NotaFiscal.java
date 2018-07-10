@@ -37,15 +37,16 @@ public class NotaFiscal {
 		return ValorTroco;
 	}
 
-	public void setValorTroco(BigDecimal valorTroco) {
-		ValorTroco = valorTroco;
+	public void setValorTroco(Double total,Double recebido) {
+		Double troc = (total+total*0.15)-recebido;
+		ValorTroco = BigDecimal.valueOf(Math.abs(troc));
 	}
 
 	public BigDecimal getImpostos() {
 		return Impostos;
 	}
 
-	public void setImpostos(BigDecimal impostos) {
-		Impostos = impostos;
+	public void setImpostos(Double total) {
+		Impostos = BigDecimal.valueOf(total*0.15);
 	}
 }

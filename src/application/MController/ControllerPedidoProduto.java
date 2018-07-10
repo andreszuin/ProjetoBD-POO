@@ -12,9 +12,10 @@ public class ControllerPedidoProduto {
     public void criar(PedidoProduto pp){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("insert into pedido_produto(pedcod,prodid)values(?,?)");
+            PreparedStatement pst = conex.conn.prepareStatement("insert into pedido_produto(pedcod,prodid,quant)values(?,?,?)");
             pst.setInt(1,pp.getCodPed());
             pst.setInt(2,pp.getProdid());
+            pst.setInt(3,pp.getQuant());
             pst.executeUpdate();
         }catch(SQLException ex){
             JOptionPane.showMessageDialog(null,"erro ao inserir os dados\n erro:"+ex);

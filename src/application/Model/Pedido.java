@@ -46,7 +46,7 @@ public class Pedido {
         return precoF;
     }
 
-    public void setPrecoF(BigDecimal precoF) {
-        this.precoF = precoF;
+    public void setPrecoF(Double precoF) {
+        this.precoF = BigDecimal.valueOf(precoF+ precoF*0.15);
     }
 }
