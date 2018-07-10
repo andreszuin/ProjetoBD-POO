@@ -21,7 +21,7 @@ public class ControllerJogo {
     public void addJogo(Jogo j, JogoFisico jf){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,preço,descrição)values(?,?,?)");
+            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,pre�o,descricao)values(?,?,?)");
             pst.setString(1,j.getNome());
             pst.setBigDecimal(2,j.getPreco());
             pst.setString(3,j.getDescricao());
@@ -29,7 +29,7 @@ public class ControllerJogo {
             conex.executa("select * from produto where nome='" +j.getNome()+"'");
             conex.rs.first();
             Integer id = conex.rs.getInt("prodid");
-            pst = conex.conn.prepareStatement("insert into jogo(prodid,produtora,genero,idioma,plataforma,anolançamento)values(?,?,?,?,?,?)");
+            pst = conex.conn.prepareStatement("insert into jogo(prodid,produtora,genero,idioma,plataforma,anolancamento)values(?,?,?,?,?,?)");
             pst.setInt(1,id);
             pst.setString(2,j.getProdutora());
             pst.setString(3,j.getGenero());
@@ -39,7 +39,7 @@ public class ControllerJogo {
             pst.executeUpdate();
             controlF.addJogoF(jf,id);
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao inserir os dados\n erro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao inserir dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }
@@ -49,7 +49,7 @@ public class ControllerJogo {
     public void addJogo(Jogo j, JogoDigital jd){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,preço,descrição)values(?,?,?)");
+            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,pre�o,descricao)values(?,?,?)");
             pst.setString(1,j.getNome());
             pst.setBigDecimal(2,j.getPreco());
             pst.setString(3,j.getDescricao());
@@ -57,7 +57,7 @@ public class ControllerJogo {
             conex.executa("select * from produto where nome='" +j.getNome()+"'");
             conex.rs.first();
             Integer id = conex.rs.getInt("prodid");
-            pst = conex.conn.prepareStatement("insert into jogo(prodid,produtora,genero,idioma,plataforma,anolançamento)values(?,?,?,?,?,?)");
+            pst = conex.conn.prepareStatement("insert into jogo(prodid,produtora,genero,idioma,plataforma,anolancamento)values(?,?,?,?,?,?)");
             pst.setInt(1,id);
             pst.setString(2,j.getProdutora());
             pst.setString(3,j.getGenero());
@@ -67,7 +67,7 @@ public class ControllerJogo {
             pst.executeUpdate();
             controlD.addJogoD(jd,id);
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao inserir os dados\n erro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao inserir dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }
@@ -78,7 +78,7 @@ public class ControllerJogo {
     public void addJogo(Jogo j, JogoFisico jf, JogoDigital jd){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,preço,descrição)values(?,?,?)");
+            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,pre�o,descricao)values(?,?,?)");
             pst.setString(1,j.getNome());
             pst.setBigDecimal(2,j.getPreco());
             pst.setString(3,j.getDescricao());
@@ -86,7 +86,7 @@ public class ControllerJogo {
             conex.executa("select * from produto where nome='" +j.getNome()+"'");
             conex.rs.first();
             Integer id = conex.rs.getInt("prodid");
-            pst = conex.conn.prepareStatement("insert into jogo(prodid,produtora,genero,idioma,plataforma,anolançamento)values(?,?,?,?,?,?)");
+            pst = conex.conn.prepareStatement("insert into jogo(prodid,produtora,genero,idioma,plataforma,anolancamento)values(?,?,?,?,?,?)");
             pst.setInt(1,id);
             pst.setString(2,j.getProdutora());
             pst.setString(3,j.getGenero());
@@ -97,7 +97,7 @@ public class ControllerJogo {
             controlF.addJogoF(jf,id);
             controlD.addJogoD(jd,id);
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao inserir os dados\n erro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao inserir dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }

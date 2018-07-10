@@ -20,7 +20,7 @@ public class ControllerPedidoProduto {
             pst.setInt(3,pp.getQuant());
             pst.executeUpdate();
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao inserir os dados\n erro:"+ex);
+        	 JOptionPane.showMessageDialog(null,"Erro ao inserir dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }

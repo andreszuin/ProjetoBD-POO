@@ -40,9 +40,9 @@ public class ControllerModCliente extends ControllerMaster{
             emailField.setText(conex.rs.getString("email"));
             idadeField.setText(String.valueOf(conex.rs.getInt("idade")));
             telField.setText(conex.rs.getString("telefone"));
-            endField.setText(conex.rs.getString("endereço"));
+            endField.setText(conex.rs.getString("endereco"));
         }catch (SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao buscar os dados\nerro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao buscar os dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }

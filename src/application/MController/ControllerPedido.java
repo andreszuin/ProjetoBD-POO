@@ -26,7 +26,7 @@ public class ControllerPedido {
             conex.rs.first();
             cod = conex.rs.getInt("pedcod");
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao inserir os dados\n erro:"+ex);
+        	 JOptionPane.showMessageDialog(null,"Erro ao inserir dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
         return cod;
@@ -36,12 +36,12 @@ public class ControllerPedido {
     public void addTotal(Pedido p){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("update pedido set preçofinal=? where pedcod=?");
+            PreparedStatement pst = conex.conn.prepareStatement("update pedido set precofinal=? where pedcod=?");
             pst.setBigDecimal(1,p.getPrecoF());
             pst.setInt(2,p.getCod());
             pst.execute();
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao modificar os dados\n erro:"+ex);
+        	 JOptionPane.showMessageDialog(null,"Erro ao modificar dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
     }
 }

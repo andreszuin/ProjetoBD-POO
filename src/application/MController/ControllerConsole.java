@@ -14,7 +14,7 @@ public class ControllerConsole {
     public void addConsole(Console con){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,preço,descrição)values(?,?,?)");
+            PreparedStatement pst = conex.conn.prepareStatement("insert into produto(nome,pre�o,descricao)values(?,?,?)");
             pst.setString(1,con.getNome());
             pst.setBigDecimal(2,con.getPreco());
             pst.setString(3,con.getDescricao());
@@ -31,7 +31,7 @@ public class ControllerConsole {
             pst.setInt(6,con.getEstq());
             pst.executeUpdate();
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao inserir os dados\n erro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao inserir dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }
@@ -40,7 +40,7 @@ public class ControllerConsole {
     public void modConsole(Console con){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("update produto set nome=?, preço=?, descrição=? where prodid=?");
+            PreparedStatement pst = conex.conn.prepareStatement("update produto set nome=?, pre�o=?, descricao=? where prodid=?");
             pst.setString(1,con.getNome());
             pst.setBigDecimal(2,con.getPreco());
             pst.setString(3,con.getDescricao());
@@ -55,7 +55,7 @@ public class ControllerConsole {
             pst.setInt(6,con.getId());
             pst.execute();
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao modificar os dados\n erro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao modificar dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }
@@ -68,7 +68,7 @@ public class ControllerConsole {
             pst.setInt(1,con.getId());
             pst.execute();
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao excluir os dados\n erro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao excluir dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }

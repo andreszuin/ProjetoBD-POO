@@ -82,7 +82,7 @@ public class ControllerVenda extends ControllerMaster{
                 membros.add(tabm);
             }
         }catch (SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro na coisinha de adicionar a tabela\nerro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao adicionar na tabela\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
         return membros;
@@ -109,7 +109,7 @@ public class ControllerVenda extends ControllerMaster{
                 membros.add(tabm);
             }
         }catch (SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro na coisinha de adicionar a tabela\nerro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao adicionar na tabela\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
         return membros;
@@ -136,7 +136,7 @@ public class ControllerVenda extends ControllerMaster{
                 membros.add(tabm);
             }
         }catch (SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro na coisinha de adicionar a tabela\nerro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao adicionar na tabela\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
         return membros;
@@ -146,7 +146,7 @@ public class ControllerVenda extends ControllerMaster{
     public void iniciarCompra(){
         try {
             if(idFunc.getText().equals("") || cpfCli.getText().equals("")){
-                throw new CampoNulloException("Um dos campos está vazio");
+                throw new CampoNulloException("Um dos campos esta vazio");
             }
             p.setCpfC(cpfCli.getText());
             p.setIdF(Integer.parseInt(idFunc.getText()));
@@ -155,7 +155,7 @@ public class ControllerVenda extends ControllerMaster{
             inicialPane.setVisible(false);
             vendaPane.setVisible(true);
         }catch(CampoNulloException cn){
-            JOptionPane.showMessageDialog(null,"Um dos campos está vazio");
+            JOptionPane.showMessageDialog(null,"Um dos campos esta vazio, preencha todos.","Aviso", JOptionPane.WARNING_MESSAGE);
         }
     }
     /**adiciona um produto para um objeto do tipo pedidoproduto, chama o controlador para adicionar os dados ao banco de dados
@@ -170,9 +170,9 @@ public class ControllerVenda extends ControllerMaster{
             conex.executa("select * from produto where prodid='" +Integer.parseInt(idField.getText())+ "'");
             conex.rs.first();
             nome = conex.rs.getString("nome");
-            preco = conex.rs.getBigDecimal("preço").doubleValue();
+            preco = conex.rs.getBigDecimal("preco").doubleValue();
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao obter os dados\n erro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao obter dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         total+=preco*Integer.parseInt(qtdField.getText());
         if(produtos==null){

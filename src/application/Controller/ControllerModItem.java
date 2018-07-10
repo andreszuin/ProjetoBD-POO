@@ -52,7 +52,7 @@ public class ControllerModItem extends ControllerMaster{
     public TextField digitalIdi;
     public TextField digitalTam;
     public TextField digitalAno;
-    public TextField digitalIns;
+    public TextArea digitalIns;
     public TextField digitalKey;
     public TextArea digitalDesc;
     Conecta conex = new Conecta();
@@ -88,9 +88,9 @@ public class ControllerModItem extends ControllerMaster{
             conex.executa("select * from produto NATURAL JOIN console where prodid='" +consoleId.getText()+"'");
             conex.rs.first();
             consoleMod.setText(conex.rs.getString("nome"));
-            Double pre = conex.rs.getBigDecimal("preço").doubleValue();
+            Double pre = conex.rs.getBigDecimal("preco").doubleValue();
             consolePre.setText(String.valueOf(pre));
-            consoleDesc.setText(conex.rs.getString("descrição"));
+            consoleDesc.setText(conex.rs.getString("descricao"));
             consoleMar.setText(conex.rs.getString("marca"));
             consoleCor.setText(conex.rs.getString("cor"));
             consoleMem.setText(conex.rs.getString("hd"));
@@ -98,7 +98,7 @@ public class ControllerModItem extends ControllerMaster{
             consoleEst.setText(String.valueOf(conex.rs.getInt("qntestoque")));
 
         }catch (SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao buscar os dados\nerro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao buscar dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }
@@ -149,18 +149,18 @@ public class ControllerModItem extends ControllerMaster{
             conex.executa("select * from produto NATURAL JOIN jogo NATURAL JOIN jogofisico where prodid='" +fisicoId.getText()+"'");
             conex.rs.first();
             fisicoTit.setText(conex.rs.getString("nome"));
-            Double pre = conex.rs.getBigDecimal("preço").doubleValue();
+            Double pre = conex.rs.getBigDecimal("preco").doubleValue();
             fisicoPre.setText(String.valueOf(pre));
-            fisicoDesc.setText(conex.rs.getString("descrição"));
+            fisicoDesc.setText(conex.rs.getString("descricao"));
             fisicoPro.setText(conex.rs.getString("produtora"));
             fisicoGen.setText(conex.rs.getString("genero"));
             fisicoIdi.setText(conex.rs.getString("idioma"));
             fisicoPla.setText(conex.rs.getString("plataforma"));
-            fisicoAno.setText(String.valueOf(conex.rs.getInt("anolançamento")));
+            fisicoAno.setText(String.valueOf(conex.rs.getInt("anolancamento")));
             fisicoEst.setText(String.valueOf(conex.rs.getInt("qtdestoque")));
 
         }catch (SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao buscar os dados\nerro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao buscar dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }
@@ -214,19 +214,19 @@ public class ControllerModItem extends ControllerMaster{
             conex.executa("select * from produto NATURAL JOIN jogo NATURAL JOIN jogodigital where prodid='" +digitalId.getText()+"'");
             conex.rs.first();
             digitalTit.setText(conex.rs.getString("nome"));
-            Double pre = conex.rs.getBigDecimal("preço").doubleValue();
+            Double pre = conex.rs.getBigDecimal("preco").doubleValue();
             digitalPre.setText(String.valueOf(pre));
-            digitalDesc.setText(conex.rs.getString("descrição"));
+            digitalDesc.setText(conex.rs.getString("descricao"));
             digitalPro.setText(conex.rs.getString("produtora"));
             digitalGen.setText(conex.rs.getString("genero"));
             digitalIdi.setText(conex.rs.getString("idioma"));
             digitalPla.setText(conex.rs.getString("plataforma"));
-            digitalAno.setText(String.valueOf(conex.rs.getInt("anolançamento")));
+            digitalAno.setText(String.valueOf(conex.rs.getInt("anolancamento")));
             digitalTam.setText(String.valueOf(conex.rs.getInt("tamanho")));
             digitalKey.setText(conex.rs.getString("jogokey"));
             digitalIns.setText(conex.rs.getString("download"));
         }catch (SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao buscar os dados\nerro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao buscar dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }

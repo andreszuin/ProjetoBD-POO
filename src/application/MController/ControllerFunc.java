@@ -14,7 +14,7 @@ public class ControllerFunc {
     public void addFunc(Funcionario func){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("insert into funcionario(cpf,nome,sexo,email,idade,telefone,endereço)values(?,?,?,?,?,?,?)");
+            PreparedStatement pst = conex.conn.prepareStatement("insert into funcionario(cpf,nome,sexo,email,idade,telefone,endereco)values(?,?,?,?,?,?,?)");
             pst.setString(1,func.getCpf());
             pst.setString(2,func.getNome());
             pst.setString(3,func.getSexo());
@@ -24,7 +24,7 @@ public class ControllerFunc {
             pst.setString(7,func.getEndereco());
             pst.executeUpdate();
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao inserir os dados\n erro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao inserir dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }
@@ -33,7 +33,7 @@ public class ControllerFunc {
     public void modFunc(Funcionario func){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("update funcionario set nome=?, sexo=?, email=?, idade=?, telefone=?, endereço=? where idfunc=? ");
+            PreparedStatement pst = conex.conn.prepareStatement("update funcionario set nome=?, sexo=?, email=?, idade=?, telefone=?, endereco=? where idfunc=? ");
             pst.setString(1,func.getNome());
             pst.setString(2,func.getSexo());
             pst.setString(3,func.getEmail());
@@ -43,7 +43,7 @@ public class ControllerFunc {
             pst.setInt(7,func.getId());
             pst.execute();
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao modificar os dados\n erro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao alterar dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }
@@ -56,7 +56,7 @@ public class ControllerFunc {
             pst.setInt(1,func.getId());
             pst.execute();
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao excluir os dados\n erro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao excluir dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }

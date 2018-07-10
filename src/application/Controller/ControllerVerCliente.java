@@ -42,7 +42,7 @@ public class ControllerVerCliente extends ControllerMaster{
                 membros.add(tabm);
             }
         }catch (SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro na coisinha de adicionar a tabela\nerro:"+ex);
+            JOptionPane.showMessageDialog(null,"Erro ao adicionar na tabela\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
         return membros;

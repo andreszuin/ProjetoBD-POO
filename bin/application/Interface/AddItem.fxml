@@ -98,7 +98,7 @@
       </MenuBar>
       <Pane fx:id="jogoPane" layoutY="94.0" prefHeight="482.0" prefWidth="700.0" visible="false">
          <children>
-            <TextArea fx:id="jogoDesc" layoutX="24.0" layoutY="362.0" prefHeight="97.0" prefWidth="521.0" />
+            <TextArea fx:id="jogoDesc" layoutX="24.0" layoutY="362.0" prefHeight="97.0" prefWidth="521.0" wrapText="true" />
             <Text layoutX="25.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descriçao">
                <font>
                   <Font size="14.0" />
@@ -139,23 +139,23 @@
                <font>
                   <Font size="14.0" />
                </font></Text>
-            <Pane fx:id="digitalPane" layoutX="24.0" layoutY="121.0" prefHeight="209.0" prefWidth="650.0" visible="false">
+            <Pane fx:id="digitalPane" layoutX="24.0" layoutY="166.0" prefHeight="167.0" prefWidth="650.0" visible="false">
                <children>
-                  <Text layoutX="530.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tamanho">
+                  <Text layoutX="528.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tamanho">
                      <font>
                         <Font size="14.0" />
                      </font></Text>
-                  <TextArea fx:id="digitalIns" layoutY="135.0" prefHeight="71.0" prefWidth="650.0" />
-                  <Text layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instruções">
+                  <TextArea fx:id="digitalIns" layoutY="93.0" prefHeight="71.0" prefWidth="650.0" wrapText="true" />
+                  <Text layoutX="3.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instruções">
                      <font>
                         <Font size="14.0" />
                      </font></Text>
-                  <Text layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key">
+                  <Text layoutX="3.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key">
                      <font>
                         <Font size="14.0" />
                      </font></Text>
-                  <TextField fx:id="digitalTam" layoutX="530.0" layoutY="20.0" prefHeight="25.0" prefWidth="120.0" />
-                  <TextField fx:id="digitalKey" layoutY="78.0" prefHeight="25.0" prefWidth="650.0" />
+                  <TextField fx:id="digitalTam" layoutX="526.0" layoutY="34.0" prefHeight="25.0" prefWidth="120.0" />
+                  <TextField fx:id="digitalKey" layoutY="34.0" prefHeight="25.0" prefWidth="511.0" />
                </children>
             </Pane>
             <Pane fx:id="fisicoPane" layoutX="413.0" layoutY="116.0" prefHeight="50.0" prefWidth="149.0" visible="false">

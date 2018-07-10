@@ -28,7 +28,7 @@ public class Main extends Application {
 			Main.mainstage = primaryStage;
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("Interface/Menu.fxml"));
 			Parent root = loader.load();
-			primaryStage.setTitle("Loja");
+			primaryStage.setTitle("Halo Games");
 			Scene scene1 = new Scene(root);
 			primaryStage.setScene(scene1);
 			primaryStage.show();

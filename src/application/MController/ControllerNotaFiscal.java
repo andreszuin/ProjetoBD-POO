@@ -29,6 +29,6 @@ public class ControllerNotaFiscal {
             JOptionPane.showMessageDialog(null,"erro ao inserir os dados\n erro:"+ex);
         }
         conex.desconnect();
-        JOptionPane.showMessageDialog(null,"Nota fiscal nÂº "+cod+"\nPedido nÂº "+nf.getPedCod()+"\n"+prods+"\nValor pago: "+nf.getValorRecebido()+"\nTroco: "+nf.getValorTroco()+"\nImpostos: "+nf.getImpostos());
+        JOptionPane.showMessageDialog(null,"Nota fiscal nº "+cod+"\nPedido nº "+nf.getPedCod()+"\n"+prods+"\nValor pago: "+nf.getValorRecebido()+"\nTroco: "+nf.getValorTroco()+"\nImpostos: "+nf.getImpostos());
     }
 }

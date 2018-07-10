@@ -14,7 +14,7 @@ public class ControllerPessoa {
     public void addCliente(Pessoa cliente){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("insert into cliente(cpf,nome,sexo,email,idade,telefone,endereço)values(?,?,?,?,?,?,?)");
+            PreparedStatement pst = conex.conn.prepareStatement("insert into cliente(cpf,nome,sexo,email,idade,telefone,endereco)values(?,?,?,?,?,?,?)");
             pst.setString(1,cliente.getCpf());
             pst.setString(2,cliente.getNome());
             pst.setString(3,cliente.getSexo());
@@ -24,7 +24,7 @@ public class ControllerPessoa {
             pst.setString(7,cliente.getEndereco());
             pst.executeUpdate();
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao inserir os dados\n erro:"+ex);
+        	 JOptionPane.showMessageDialog(null,"Erro ao inserir dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }
@@ -33,7 +33,7 @@ public class ControllerPessoa {
     public void modCliente(Pessoa cliente){
         conex.conexao();
         try{
-            PreparedStatement pst = conex.conn.prepareStatement("update cliente set nome=?, sexo=?, email=?, idade=?, telefone=?, endereço=? where cpf=? ");
+            PreparedStatement pst = conex.conn.prepareStatement("update cliente set nome=?, sexo=?, email=?, idade=?, telefone=?, endereco=? where cpf=? ");
             pst.setString(1,cliente.getNome());
             pst.setString(2,cliente.getSexo());
             pst.setString(3,cliente.getEmail());
@@ -43,7 +43,7 @@ public class ControllerPessoa {
             pst.setString(7,cliente.getCpf());
             pst.execute();
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao modificar os dados\n erro:"+ex);
+        	 JOptionPane.showMessageDialog(null,"Erro ao alterar dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }
@@ -56,7 +56,7 @@ public class ControllerPessoa {
             pst.setString(1,cliente.getCpf());
             pst.execute();
         }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao excluir os dados\n erro:"+ex);
+        	 JOptionPane.showMessageDialog(null,"Erro ao excluir dados\nInforme o seguinte erro ao suporte:\n"+ex, "Erro", JOptionPane.ERROR_MESSAGE);
         }
         conex.desconnect();
     }
