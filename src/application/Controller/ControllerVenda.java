@@ -197,6 +197,8 @@ public class ControllerVenda extends ControllerMaster{
         nf.setValorTroco(total,Double.parseDouble(pagoField.getText()));
         nf.setImpostos(total);
         controlNF.criar(nf,produtos);
+        produtos = null;
+        total = 0.00;
 
         vendaPane.setVisible(false);
         inicialPane.setVisible(true);
