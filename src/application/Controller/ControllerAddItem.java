@@ -14,6 +14,7 @@ import javafx.scene.layout.Pane;
 import java.math.BigDecimal;
 
 public class ControllerAddItem extends ControllerMaster{
+    /**controlador da pagina de adicionar produtos*/
     public Pane consolePane;
     public Pane fisicoPane;
     public Pane digitalPane;
@@ -52,33 +53,38 @@ public class ControllerAddItem extends ControllerMaster{
     JogoFisico jf = new JogoFisico();
     JogoDigital jd = new JogoDigital();
     ControllerJogo controlJ = new ControllerJogo();
-
+    /**mostra a tela para inserção de dados de console*/
     public void showConsole(){
         fisicoPane.setVisible(false);
         digitalPane.setVisible(false);
         jogoPane.setVisible(false);
         consolePane.setVisible(true);
     }
+    /**mostra a tela de inserção de dados de jogo*/
     public void showJogo(){
         consolePane.setVisible(false);
         jogoPane.setVisible(true);
     }
+    /**abre ambas as opções de jogo digital e jogo fisico*/
     public void showAmbos(){
         digitalPane.setVisible(true);
         fisicoPane.setVisible(true);
         helper = 3;
     }
+    /**abre as opções de jogo fisico apenas*/
     public void showFisico(){
         digitalPane.setVisible(false);
         fisicoPane.setVisible(true);
         helper = 1;
     }
+    /**abre as opções de jogo digital apenas*/
     public void showDigital(){
         fisicoPane.setVisible(false);
         digitalPane.setVisible(true);
         helper = 2;
     }
-
+    /**coleta os dados na tela de console e os coloca num objeto do tipo console, chama seu controlador para adicionar os dados
+     *  ao banco de dados e limpa os TextField*/
     public void adicionarC(){
         con.setDescricao(consoleDesc.getText());
         Double prec = Double.parseDouble(consolePre.getText());
@@ -99,7 +105,8 @@ public class ControllerAddItem extends ControllerMaster{
         consoleCtr.setText(null);
         consoleEst.setText(null);
     }
-
+    /**coleta os dados na tela de console e os coloca num objeto do tipo jogo, chama o controlador correto para adicionar os dados
+     *  ao banco de dados e limpa os TextField*/
     public void adicionarJ(){
         j.setDescricao(jogoDesc.getText());
         Double prec = Double.parseDouble(jogoPre.getText());

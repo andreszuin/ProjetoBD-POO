@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.sql.*;
 
 public class Conecta {
+    /**classe para realizar a conexão com o banco de dados*/
     public Statement stm;
     public ResultSet rs;
     private String driver = "org.postgresql.Driver";
@@ -10,7 +11,7 @@ public class Conecta {
     private String usuario = "postgres";
     private String senha = "postgres";
     public Connection conn;
-
+    /**realiza a conexão com o banco de dados*/
     public void conexao(){
         try {
             System.setProperty("jdbc.Drivers",driver);
@@ -22,7 +23,7 @@ public class Conecta {
             System.exit(0);
         }
     }
-
+    /**executa strings de sql*/
     public void executa(String sql){
         try {
             stm = conn.createStatement(rs.TYPE_SCROLL_INSENSITIVE, rs.CONCUR_READ_ONLY);
@@ -31,7 +32,7 @@ public class Conecta {
             JOptionPane.showMessageDialog(null,"erro no executa");
         }
     }
-
+    /**finaliza a conexão com o banco de dados*/
     public void desconnect(){
         try {
             conn.close();

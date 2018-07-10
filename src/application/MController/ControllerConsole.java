@@ -8,7 +8,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class ControllerConsole {
+    /**controlador da classe console*/
     Conecta conex = new Conecta();
+    /**adiciona os dados recebidos ao banco de dados*/
     public void addConsole(Console con){
         conex.conexao();
         try{
@@ -33,7 +35,7 @@ public class ControllerConsole {
         }
         conex.desconnect();
     }
-
+    /**modifica os dados do banco de dados com os dados recebidos*/
     public void modConsole(Console con){
         conex.conexao();
         try{
@@ -56,7 +58,7 @@ public class ControllerConsole {
         }
         conex.desconnect();
     }
-
+    /**exclui os dados do banco de dados de acordo com os dados recebidos*/
     public void excConsole(Console con){
         conex.conexao();
         try {

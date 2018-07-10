@@ -8,7 +8,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class ControllerPessoa {
+    /**controlador da classe pessoa*/
     Conecta conex = new Conecta();
+    /**adiciona os dados recebidos ao banco de dados*/
     public void addCliente(Pessoa cliente){
         conex.conexao();
         try{
@@ -26,7 +28,7 @@ public class ControllerPessoa {
         }
         conex.desconnect();
     }
-
+    /**modifica os dados do banco de dados com os dados recebidos*/
     public void modCliente(Pessoa cliente){
         conex.conexao();
         try{
@@ -44,7 +46,7 @@ public class ControllerPessoa {
         }
         conex.desconnect();
     }
-
+    /**exclui os dados do banco de dados de acordo com os dados recebidos*/
     public void excCliente(Pessoa cliente){
         conex.conexao();
         try {

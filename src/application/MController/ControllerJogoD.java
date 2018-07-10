@@ -8,7 +8,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class ControllerJogoD {
+    /**controlador da classe jogo digital*/
     Conecta conex = new Conecta();
+    /**adiciona os dados recebidos ao banco de dados*/
     public void addJogoD(JogoDigital jd, Integer id){
         conex.conexao();
         try{
@@ -23,7 +25,7 @@ public class ControllerJogoD {
         }
         conex.desconnect();
     }
-
+    /**modifica os dados do banco de dados com os dados recebidos*/
     public void modJogoD(JogoDigital jd){
         conex.conexao();
         try{
@@ -52,7 +54,7 @@ public class ControllerJogoD {
         }
         conex.desconnect();
     }
-
+    /**exclui os dados do banco de dados de acordo com os dados recebidos*/
     public void excJogoD(JogoDigital jd){
         conex.conexao();
         try {

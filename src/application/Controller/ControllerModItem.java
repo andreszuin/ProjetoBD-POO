@@ -17,6 +17,7 @@ import java.math.BigDecimal;
 import java.sql.SQLException;
 
 public class ControllerModItem extends ControllerMaster{
+    /**controlador da pagina de modificar produtos*/
     public Pane consolePane;
     public Pane fisicoPane;
     public Pane digitalPane;
@@ -62,23 +63,26 @@ public class ControllerModItem extends ControllerMaster{
     ControllerJogoF controlF = new ControllerJogoF();
     JogoDigital jd = new JogoDigital();
     ControllerJogoD controlD = new ControllerJogoD();
-
+    /**mostra a tela de modificar consoles*/
     public void showConsole(){
         fisicoPane.setVisible(false);
         digitalPane.setVisible(false);
         consolePane.setVisible(true);
     }
+    /**mostra a tela de modificar jogos fisicos*/
     public void showFisico(){
         digitalPane.setVisible(false);
         consolePane.setVisible(false);
         fisicoPane.setVisible(true);
     }
+    /**mostra a tela de modificar jogos digitais*/
     public void showDigital(){
         fisicoPane.setVisible(false);
         consolePane.setVisible(false);
         digitalPane.setVisible(true);
     }
     //console
+    /**encontra os dados do console desejado*/
     public void encontrarC(){
         conex.conexao();
         try{
@@ -99,7 +103,8 @@ public class ControllerModItem extends ControllerMaster{
         }
         conex.desconnect();
     }
-
+    /**envia os dados na tela de modificar consoles para um objeto do tipo console, chama o controlador para modificar os dados no
+     * banco de dados e limpa os TextField*/
     public void modificarC(){
         con.setId(Integer.parseInt(consoleId.getText()));
         con.setDescricao(consoleDesc.getText());
@@ -122,7 +127,8 @@ public class ControllerModItem extends ControllerMaster{
         consoleId.setText(null);
         consoleEst.setText(null);
     }
-
+    /**adiciona os dados pertinentes a um objeto do tipo console, chama o controlador para excluir os dados do banco de dados
+     * e limpa os TextField*/
     public void excluirC(){
         con.setId(Integer.parseInt(consoleId.getText()));
         controlC.excConsole(con);
@@ -137,6 +143,7 @@ public class ControllerModItem extends ControllerMaster{
         consoleEst.setText(null);
     }
     //fisicos
+    /**encontra os dados do jogo fisico desejado*/
     public void encontrarF(){
         conex.conexao();
         try{
@@ -158,6 +165,8 @@ public class ControllerModItem extends ControllerMaster{
         }
         conex.desconnect();
     }
+    /**envia os dados na tela de modificar jogos fisicos para um objeto do tipo jogo fisico, chama o controlador para modificar os dados no
+     * banco de dados e limpa os TextField*/
     public void modificarF(){
         jf.setId(Integer.parseInt(fisicoId.getText()));
         jf.setDescricao(fisicoDesc.getText());
@@ -182,7 +191,8 @@ public class ControllerModItem extends ControllerMaster{
         fisicoAno.setText(null);
         fisicoEst.setText(null);
     }
-
+    /**adiciona os dados pertinentes a um objeto do tipo jogo fisico, chama o controlador para excluir os dados do banco de dados
+     * e limpa os TextField*/
     public void excluirF(){
         jf.setId(Integer.parseInt(fisicoId.getText()));
         controlF.excJogoF(jf);
@@ -198,6 +208,7 @@ public class ControllerModItem extends ControllerMaster{
         fisicoEst.setText(null);
     }
     //digitais
+    /**encontra os dados do jogo digital desejado*/
     public void encontrarD(){
         conex.conexao();
         try{
@@ -220,7 +231,8 @@ public class ControllerModItem extends ControllerMaster{
         }
         conex.desconnect();
     }
-
+    /**envia os dados na tela de modificar jogos digitais para um objeto do tipo jogo digital, chama o controlador para modificar os dados no
+     * banco de dados e limpa os TextField*/
     public void modificarD(){
         jd.setId(Integer.parseInt(digitalId.getText()));
         jd.setDescricao(digitalDesc.getText());
@@ -249,7 +261,8 @@ public class ControllerModItem extends ControllerMaster{
         digitalKey.setText(null);
         digitalIns.setText(null);
     }
-
+    /**adiciona os dados pertinentes a um objeto do tipo jogo digital, chama o controlador para excluir os dados do banco de dados
+     * e limpa os TextField*/
     public void excluirD(){
         jd.setId(Integer.parseInt(digitalId.getText()));
         controlD.excJogoD(jd);

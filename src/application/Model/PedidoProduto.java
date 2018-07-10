@@ -1,6 +1,7 @@
 package application.Model;
 
 public class PedidoProduto {
+    /**classe modelo de pedido produto*/
     protected Integer codPed;
     protected Integer prodid;
     protected Integer quant;

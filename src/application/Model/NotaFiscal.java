@@ -3,6 +3,7 @@ package application.Model;
 import java.math.BigDecimal;
 
 public class NotaFiscal {
+	/**classe modelo de nota fiscal*/
 	protected Integer CodNF;
 	protected Integer pedCod;
 	protected BigDecimal valorRecebido;

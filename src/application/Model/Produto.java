@@ -3,6 +3,7 @@ package application.Model;
 import java.math.BigDecimal;
 
 public class Produto {
+    /**classe modelo de produto*/
     protected Integer id;
     protected String descricao;
     protected BigDecimal preco;

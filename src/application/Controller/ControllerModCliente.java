@@ -13,6 +13,7 @@ import javax.swing.*;
 import java.sql.SQLException;
 
 public class ControllerModCliente extends ControllerMaster{
+    /**controlador da pagina de modificar clientes*/
     ObservableList<String> sexo = FXCollections.observableArrayList("Masculino","Feminino","Outro");
     @FXML
     public TextField cpfField;
@@ -25,11 +26,11 @@ public class ControllerModCliente extends ControllerMaster{
     Pessoa cliente = new Pessoa();
     ControllerPessoa control = new ControllerPessoa();
     Conecta conex = new Conecta();
-
+    /**inicializa a tela adicionando os itens do choicebox*/
     public void initialize(){
         sexoField.setItems(sexo);
     }
-
+    /**encontra os dados do cliente desejado e popula a tela com eles*/
     public void encontrar(){
         conex.conexao();
         try{
@@ -47,7 +48,8 @@ public class ControllerModCliente extends ControllerMaster{
         conex.desconnect();
     }
 
-
+    /**adiciona os dados presentes na tela a um objeto do tipo pessoa, chama o controlador para atualizar o banco de dados
+     * e limpa os TextField*/
     public void modificar(){
         cliente.setCpf(cpfField.getText());
         cliente.setNome(nomeField.getText());
@@ -65,6 +67,8 @@ public class ControllerModCliente extends ControllerMaster{
         endField.setText(null);
         sexoField.setValue("Masculino");
     }
+    /**adiciona os dados pertinentes a um objeto do tipo pessoa, chama o controlador para excluir os dados do banco de dados
+     * e limpa os TextField*/
     public void excluir(){
         cliente.setCpf(cpfField.getText());
         control.excCliente(cliente);

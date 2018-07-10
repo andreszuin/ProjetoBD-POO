@@ -2,6 +2,7 @@ package application.Model;
 
 
 public class Jogo extends Produto{
+    /**classe modelo de jogo*/
     protected String produtora;
     protected String genero;
     protected String plataforma;

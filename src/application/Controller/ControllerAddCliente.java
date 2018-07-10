@@ -9,6 +9,7 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 
 public class ControllerAddCliente extends ControllerMaster{
+    /**controlador da pagina de adicionar clientes*/
     ObservableList<String> sexo = FXCollections.observableArrayList("Masculino","Feminino","Outro");
     @FXML
     public TextField cpfField;
@@ -20,12 +21,13 @@ public class ControllerAddCliente extends ControllerMaster{
     public ChoiceBox sexoField;
     Pessoa cliente = new Pessoa();
     ControllerPessoa control = new ControllerPessoa();
-
+    /**inicializa a tela colocando os itens do choicebox e mostrando um valor padrão*/
     public void initialize(){
         sexoField.setValue("Masculino");
         sexoField.setItems(sexo);
     }
-
+    /**envia os dados coletados na tela para um objeto do tipo pessoa, chama seu controlador para adicionar os dados ao banco de dados
+     *  e limpa os Textfields*/
     public void adicionar(){
         cliente.setCpf(cpfField.getText());
         cliente.setNome(nomeField.getText());

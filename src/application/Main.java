@@ -9,7 +9,9 @@ import javafx.scene.Scene;
 import javafx.stage.WindowEvent;
 
 public class Main extends Application {
+	/**classe principal*/
 	static Stage mainstage;
+	/**modifica a tela que o usuario vê*/
 	public static void setStageScene(Scene scene){
 		mainstage.setScene(scene);
 	}
@@ -19,6 +21,7 @@ public class Main extends Application {
 	}
 	Conecta conex = new Conecta();
 	@Override
+	/**mostra a primeira tela do programa, realiza conexão inicial com o bd e cuida de fechar o programa e desconectar do banco de dados */
 	public void start(Stage primaryStage) {
 		try {
 			conex.conexao();

@@ -1,6 +1,7 @@
 package application.Model;
 
 public class JogoFisico extends Jogo{
+    /**classe modelo de jogo fisico*/
     protected Integer estq;
 
     public Integer getEstq() {

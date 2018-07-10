@@ -12,20 +12,22 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ControllerVerCliente extends ControllerMaster{
+    /**controlador da pagina para ver os clientes*/
     public TableView<TabelaClientes> tabela_clientes;
     public TableColumn<TabelaClientes,String> colNome;
     public TableColumn<TabelaClientes,String>colCPF;
     Conecta conex = new Conecta();
+    /**inicializa a pagina chamando a função para popular a tabela*/
     public void initialize(){
         atuTabela();
     }
-
+    /**popula a tabela*/
     public void atuTabela(){
         colNome.setCellValueFactory(new PropertyValueFactory<TabelaClientes,String>("nome"));
         colCPF.setCellValueFactory(new PropertyValueFactory<TabelaClientes,String>("cpf"));
         tabela_clientes.getItems().setAll(lista());
     }
-
+    /**cria uma lista com os itens necessarios para popular a tabela*/
     private List<TabelaClientes> lista(){
         conex.conexao();
         List membros = new LinkedList();

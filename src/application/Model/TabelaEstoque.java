@@ -6,6 +6,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 public class TabelaEstoque {
+    /**classe da tabela de produtos para transformar os dados recebidos*/
     private IntegerProperty Id;
     public void setId(Integer id){
         IdProperty().set(id);

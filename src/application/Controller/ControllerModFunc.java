@@ -13,6 +13,7 @@ import javax.swing.*;
 import java.sql.SQLException;
 
 public class ControllerModFunc extends ControllerMaster{
+    /**controlador da pagina de modificar funcionarios*/
     ObservableList<String> sexo = FXCollections.observableArrayList("Masculino","Feminino","Outro");
     @FXML
     public TextField cpfField;
@@ -27,11 +28,11 @@ public class ControllerModFunc extends ControllerMaster{
     ControllerFunc control = new ControllerFunc();
 
     Conecta conex = new Conecta();
-
+    /**inicializa a tela adicionando os itens do choicebox*/
     public void initialize(){
         sexoField.setItems(sexo);
     }
-
+    /**encontra os dados do funcionario desejado e popula a tela com eles*/
     public void encontrar(){
         conex.conexao();
         try{
@@ -49,7 +50,8 @@ public class ControllerModFunc extends ControllerMaster{
         }
         conex.desconnect();
     }
-
+    /**envia os dados na tela para um objeto do tipo funcionario, chama o controlador para atualizar os dados no banco de dados
+     * e limpa os TextFields*/
     public void modificar(){
         func.setNome(nomeField.getText());
         func.setIdade(Integer.parseInt(idadeField.getText()));
@@ -68,7 +70,8 @@ public class ControllerModFunc extends ControllerMaster{
         idField.setText(null);
         sexoField.setValue("Masculino");
     }
-
+    /**adiciona os dados pertinentes a um objeto do tipo funcionario, chama o controlador para excluir os dados do banco de dados
+     * e limpa os TextField*/
     public void excluir(){
         func.setId(Integer.parseInt(idField.getText()));
         control.excFunc(func);

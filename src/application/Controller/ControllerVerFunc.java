@@ -12,22 +12,24 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ControllerVerFunc extends ControllerMaster{
+    /**controlador da pagina para ver os funcionarios*/
     public TableView<TabelaFuncionarios> tabela_funcionarios;
     public TableColumn<TabelaFuncionarios,Integer>colId;
     public TableColumn<TabelaFuncionarios,String> colNome;
     public TableColumn<TabelaFuncionarios,String>colCPF;
     Conecta conex = new Conecta();
+    /**inicializa a pagina chamando a função para popular a tabela*/
     public void initialize(){
         atuTabela();
     }
-
+    /**popula a tabela*/
     public void atuTabela(){
         colId.setCellValueFactory(new PropertyValueFactory<TabelaFuncionarios,Integer>("Id"));
         colNome.setCellValueFactory(new PropertyValueFactory<TabelaFuncionarios,String>("nome"));
         colCPF.setCellValueFactory(new PropertyValueFactory<TabelaFuncionarios,String>("cpf"));
         tabela_funcionarios.getItems().setAll(lista());
     }
-
+    /**cria uma lista com os itens necessarios para popular a tabela*/
     private List<TabelaFuncionarios> lista(){
         conex.conexao();
         List membros = new LinkedList();

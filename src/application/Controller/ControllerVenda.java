@@ -21,6 +21,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ControllerVenda extends ControllerMaster{
+    /**controlador da pagina de vendas*/
     public TextField idField;
     public TextField totalField;
     public TextField idFunc;
@@ -54,19 +55,19 @@ public class ControllerVenda extends ControllerMaster{
     public TableView<TabelaClientes> tabela_clientes;
     public TableColumn<TabelaClientes,String> colNomeC;
     public TableColumn<TabelaClientes,String>colCPFC;
-
+    /**inicializa a pagina e chama as funções de popular as tabelas*/
     public void initialize(){
         atuTabelaE();
         atuTabelaF();
         atuTabelaC();
     }
-
+    /**popula a tabela de produtos*/
     public void atuTabelaE(){
         colIdE.setCellValueFactory(new PropertyValueFactory<TabelaEstoque,Integer>("Id"));
         colNomeE.setCellValueFactory(new PropertyValueFactory<TabelaEstoque,String>("nome"));
         tabela_estoque.getItems().setAll(listaE());
     }
-
+    /**cria a lista com os itens para popular a tabela de produtos*/
     private List<TabelaEstoque> listaE(){
         conex.conexao();
         List membros = new LinkedList();
@@ -86,13 +87,13 @@ public class ControllerVenda extends ControllerMaster{
         conex.desconnect();
         return membros;
     }
-
+    /**popula a tabela de funcionarios*/
     public void atuTabelaF(){
         colIdF.setCellValueFactory(new PropertyValueFactory<TabelaFuncionarios,Integer>("Id"));
         colNomeF.setCellValueFactory(new PropertyValueFactory<TabelaFuncionarios,String>("nome"));
         tabela_funcionarios.getItems().setAll(listaF());
     }
-
+    /**cria a lista com os itens para popular a tabela de funcionarios*/
     private List<TabelaFuncionarios> listaF(){
         conex.conexao();
         List membros = new LinkedList();
@@ -112,13 +113,13 @@ public class ControllerVenda extends ControllerMaster{
         conex.desconnect();
         return membros;
     }
-
+    /**popula a tabela de clientes*/
     public void atuTabelaC(){
         colNomeC.setCellValueFactory(new PropertyValueFactory<TabelaClientes,String>("nome"));
         colCPFC.setCellValueFactory(new PropertyValueFactory<TabelaClientes,String>("cpf"));
         tabela_clientes.getItems().setAll(listaC());
     }
-
+    /**cria a lista com os itens para popular a tabela de clientes*/
     private List<TabelaClientes> listaC(){
         conex.conexao();
         List membros = new LinkedList();
@@ -138,7 +139,8 @@ public class ControllerVenda extends ControllerMaster{
         conex.desconnect();
         return membros;
     }
-
+    /**testa para ver se os campos estao preenchidos, apos isso adiciona os dados para um objeto do tipo pedido, chama seu controlador para
+     * adicionar os dados ao banco de dados, recebe o codigo do pedido de volta e abre a tela para continuar a transação*/
     public void iniciarCompra(){
         try {
             if(idFunc.getText().equals("") || cpfCli.getText().equals("")){
@@ -154,7 +156,8 @@ public class ControllerVenda extends ControllerMaster{
             JOptionPane.showMessageDialog(null,"Um dos campos está vazio");
         }
     }
-
+    /**adiciona um produto para um objeto do tipo pedidoproduto, chama o controlador para adicionar os dados ao banco de dados
+     * , resgata o preço e nome do produto para adicionar ao valor total e lista de produtos respectivamente e mostra ambos na tela*/
     public void adicionarItem(){
         pp.setCodPed(codPedido);
         pp.setProdid(Integer.parseInt(idField.getText()));
@@ -179,7 +182,9 @@ public class ControllerVenda extends ControllerMaster{
         totalField.setText(String.valueOf(total+total*0.15));
         produtosText.setText(produtos);
     }
-
+    /**envia o preço final para um objeto do tipo pedido e chama seu controlador para adicionar o dados ao banco de dados, envia os dados
+     * necessário para um objeto do tipo nota fiscal e chama seu controlador para adicionar os dados ao banco de dados, volta a tela para
+     * a inicial da venda e limpa os TextField*/
     public void finalizarCompra(){
         p.setCod(codPedido);
         p.setPrecoF(total);

@@ -9,6 +9,7 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 
 public class ControllerAddFunc extends ControllerMaster{
+    /**controlador da pagina de adicionar funcionarios*/
     ObservableList<String> sexo = FXCollections.observableArrayList("Masculino","Feminino","Outro");
     @FXML
     public TextField cpfField;
@@ -21,12 +22,13 @@ public class ControllerAddFunc extends ControllerMaster{
     Funcionario func = new Funcionario();
     ControllerFunc control = new ControllerFunc();
 
-
+    /**inicializa a tela colocando os itens do choicebox e mostrando um valor padrão*/
     public void initialize(){
         sexoField.setValue("Masculino");
         sexoField.setItems(sexo);
     }
-
+    /**envia os dados coletados na tela para um objeto do tipo funcionario, chama seu controlador para adicionar os dados ao banco de dados
+     *  e limpa os Textfields*/
     public void adicionar(){
         func.setCpf(cpfField.getText());
         func.setNome(nomeField.getText());

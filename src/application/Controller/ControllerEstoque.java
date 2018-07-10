@@ -12,22 +12,24 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ControllerEstoque extends ControllerMaster{
+    /**controlador da pagina de ver o estoque*/
     public TableView<TabelaEstoque> tabela_estoque;
     public TableColumn<TabelaEstoque,Integer> colId;
     public TableColumn<TabelaEstoque,String> colNome;
     public TableColumn<TabelaEstoque,String>colDesc;
     Conecta conex = new Conecta();
+    /**inicializa a tela chamando a função para popular a tabela*/
     public void initialize(){
         atuTabela();
     }
-
+    /**popula a tabela*/
     public void atuTabela(){
         colId.setCellValueFactory(new PropertyValueFactory<TabelaEstoque,Integer>("Id"));
         colNome.setCellValueFactory(new PropertyValueFactory<TabelaEstoque,String>("nome"));
         colDesc.setCellValueFactory(new PropertyValueFactory<TabelaEstoque,String>("desc"));
         tabela_estoque.getItems().setAll(lista());
     }
-
+    /**cria uma lista com os itens necessarios para popular a tabela*/
     private List<TabelaEstoque> lista(){
         conex.conexao();
         List membros = new LinkedList();
