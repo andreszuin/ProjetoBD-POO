@@ -8,7 +8,7 @@ public class Conecta {
     private String driver = "org.postgresql.Driver";
     private String caminho = "jdbc:postgresql://localhost:5432/Dados";
     private String usuario = "postgres";
-    private String senha = "aula321";
+    private String senha = "postgres";
     public Connection conn;
     /**realiza a conexão com o banco de dados*/
     public void conexao(){
@@ -18,7 +18,6 @@ public class Conecta {
             //JOptionPane.showMessageDialog(null,"conexão realizada com sucesso");
         }catch (SQLException ex){
             JOptionPane.showMessageDialog(null,"Erro Fatal ao conectar!\nInforme o seguinte erro ao suporte:\n"+ex,"Erro Fatal", JOptionPane.ERROR_MESSAGE);
-            Main.mainstage.close();
             System.exit(0);
         }
     }

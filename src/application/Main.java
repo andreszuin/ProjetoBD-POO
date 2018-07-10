@@ -37,7 +37,6 @@ public class Main extends Application {
 				public void handle(WindowEvent event) {
 
 					conex.desconnect();
-					mainstage.close();
 					System.exit(0);
 				}
 			});
