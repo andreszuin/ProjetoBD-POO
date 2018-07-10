@@ -7,92 +7,179 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerModItem">
+<AnchorPane prefHeight="490.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerModItem">
    <children>
-      <Pane fx:id="consolePane" layoutX="107.0" layoutY="42.0" prefHeight="363.0" prefWidth="506.0" visible="false">
+      <Pane fx:id="consolePane" layoutX="-1.0" layoutY="93.0" prefHeight="383.0" prefWidth="700.0" visible="false">
          <children>
-            <TextField fx:id="consoleId" layoutX="14.0" layoutY="27.0" />
-            <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" />
-            <TextArea fx:id="consoleDesc" layoutX="14.0" layoutY="241.0" prefHeight="92.0" prefWidth="149.0" />
-            <Text layoutX="14.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descriçao" />
-            <TextField fx:id="consolePre" layoutX="188.0" layoutY="77.0" />
-            <Text layoutX="188.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço" />
-            <TextField fx:id="consoleMar" layoutX="14.0" layoutY="77.0" />
-            <TextField fx:id="consoleMod" layoutX="188.0" layoutY="127.0" />
-            <Text layoutX="13.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca" />
-            <Text layoutX="188.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo" />
-            <TextField fx:id="consoleCor" layoutX="14.0" layoutY="127.0" />
-            <TextField fx:id="consoleMem" layoutX="188.0" layoutY="182.0" />
-            <Text layoutX="13.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cor" />
-            <Text layoutX="188.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memória" />
-            <TextField fx:id="consoleCtr" layoutX="14.0" layoutY="182.0" />
-            <TextField fx:id="consoleEst" layoutX="188.0" layoutY="241.0" />
-            <Text layoutX="13.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controles" />
-            <Text layoutX="188.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque" />
-            <Button layoutX="188.0" layoutY="337.0" mnemonicParsing="false" onAction="#modificarC" text="Editar" />
-            <Button layoutX="186.0" layoutY="27.0" mnemonicParsing="false" onAction="#encontrarC" text="Encontrar" />
-            <Button layoutX="311.0" layoutY="337.0" mnemonicParsing="false" onAction="#excluirC" text="Excluir" />
+            <TextField fx:id="consoleId" layoutX="46.0" layoutY="2.0" />
+            <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" />
+            <TextArea fx:id="consoleDesc" layoutX="17.0" layoutY="183.0" prefHeight="187.0" prefWidth="563.0" />
+            <Text layoutX="16.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descriçao">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="consolePre" layoutX="14.0" layoutY="128.0" prefHeight="25.0" prefWidth="100.0" />
+            <Text layoutX="11.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="consoleMar" layoutX="394.0" layoutY="64.0" prefHeight="25.0" prefWidth="290.0" />
+            <TextField fx:id="consoleMod" layoutX="15.0" layoutY="64.0" prefHeight="25.0" prefWidth="360.0" />
+            <Text layoutX="398.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="13.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="consoleCor" layoutX="154.0" layoutY="128.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="consoleMem" layoutX="445.0" layoutY="128.0" prefWidth="100.0" />
+            <Text layoutX="154.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cor">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="445.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memória">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="consoleCtr" layoutX="299.0" layoutY="128.0" prefWidth="100.0" />
+            <TextField fx:id="consoleEst" layoutX="586.0" layoutY="128.0" prefWidth="100.0" />
+            <Text layoutX="299.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controles">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="580.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Button layoutX="586.0" layoutY="260.0" mnemonicParsing="false" onAction="#modificarC" prefHeight="50.0" prefWidth="100.0" text="Editar produto" />
+            <Button layoutX="212.0" layoutY="2.0" mnemonicParsing="false" onAction="#encontrarC" text="Procurar" />
+            <Button layoutX="586.0" layoutY="319.0" mnemonicParsing="false" onAction="#excluirC" prefHeight="50.0" prefWidth="100.0" text="Excluir prduto" />
          </children>
       </Pane>
-      <Pane fx:id="fisicoPane" layoutX="107.0" layoutY="42.0" prefHeight="363.0" prefWidth="506.0" visible="false">
+      <Pane fx:id="fisicoPane" layoutX="-1.0" layoutY="101.0" prefHeight="383.0" prefWidth="700.0" visible="false">
          <children>
-            <TextField fx:id="fisicoId" layoutX="14.0" layoutY="27.0" />
-            <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" />
-            <TextArea fx:id="fisicoDesc" layoutX="14.0" layoutY="241.0" prefHeight="92.0" prefWidth="149.0" />
-            <Text layoutX="14.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descriçao" />
-            <TextField fx:id="fisicoPre" layoutX="188.0" layoutY="77.0" />
-            <Text layoutX="188.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço" />
-            <TextField fx:id="fisicoTit" layoutX="14.0" layoutY="77.0" />
-            <TextField fx:id="fisicoPro" layoutX="188.0" layoutY="127.0" />
-            <Text layoutX="13.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo" />
-            <Text layoutX="188.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produtora" />
-            <TextField fx:id="fisicoGen" layoutX="14.0" layoutY="127.0" />
-            <TextField fx:id="fisicoPla" layoutX="188.0" layoutY="182.0" />
-            <Text layoutX="13.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gênero" />
-            <Text layoutX="188.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plataforma" />
-            <TextField fx:id="fisicoIdi" layoutX="14.0" layoutY="182.0" />
-            <TextField fx:id="fisicoEst" layoutX="188.0" layoutY="241.0" />
-            <Text layoutX="13.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idioma" />
-            <Text layoutX="188.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque" />
-            <Button layoutX="188.0" layoutY="337.0" mnemonicParsing="false" onAction="#modificarF" text="Editar" />
-            <TextField fx:id="fisicoAno" layoutX="188.0" layoutY="305.0" />
-            <Text layoutX="189.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano de lançamento" />
-            <Button layoutX="189.0" layoutY="27.0" mnemonicParsing="false" onAction="#encontrarF" text="Encontrar" />
-            <Button layoutX="311.0" layoutY="337.0" mnemonicParsing="false" onAction="#excluirF" text="Excluir" />
+            <TextField fx:id="fisicoId" layoutX="46.0" layoutY="2.0" />
+            <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextArea fx:id="fisicoDesc" layoutX="14.0" layoutY="242.0" prefHeight="144.0" prefWidth="563.0" />
+            <Text layoutX="16.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="fisicoPre" layoutX="14.0" layoutY="115.0" />
+            <Text layoutX="13.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="fisicoTit" layoutX="11.0" layoutY="65.0" prefHeight="25.0" prefWidth="400.0" />
+            <TextField fx:id="fisicoPro" layoutX="445.0" layoutY="65.0" prefHeight="25.0" prefWidth="235.0" />
+            <Text layoutX="13.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="445.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produtora">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="fisicoGen" layoutX="188.0" layoutY="115.0" />
+            <TextField fx:id="fisicoPla" layoutX="14.0" layoutY="179.0" />
+            <Text layoutX="189.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gênero">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="13.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plataforma">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="fisicoIdi" layoutX="371.0" layoutY="115.0" />
+            <TextField fx:id="fisicoEst" layoutX="188.0" layoutY="179.0" />
+            <Text layoutX="371.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idioma">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="187.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Button layoutX="587.0" layoutY="274.0" mnemonicParsing="false" onAction="#modificarF" prefHeight="50.0" prefWidth="100.0" text="Editar produto" />
+            <TextField fx:id="fisicoAno" layoutX="534.0" layoutY="115.0" />
+            <Text layoutX="534.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano de lançamento">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Button layoutX="212.0" layoutY="2.0" mnemonicParsing="false" onAction="#encontrarF" text="Procurar" />
+            <Button layoutX="587.0" layoutY="333.0" mnemonicParsing="false" onAction="#excluirF" prefHeight="50.0" prefWidth="100.0" text="Excluir produto" />
          </children>
       </Pane>
-      <Pane fx:id="digitalPane" layoutX="107.0" layoutY="42.0" prefHeight="363.0" prefWidth="506.0" visible="false">
+      <Pane fx:id="digitalPane" layoutY="93.0" prefHeight="399.0" prefWidth="700.0" visible="false">
          <children>
-            <TextField fx:id="digitalId" layoutX="14.0" layoutY="27.0" />
-            <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" />
-            <TextArea fx:id="digitalDesc" layoutX="14.0" layoutY="241.0" prefHeight="92.0" prefWidth="149.0" />
-            <Text layoutX="14.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descriçao" />
-            <TextField fx:id="digitalPre" layoutX="179.0" layoutY="77.0" />
-            <Text layoutX="179.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço" />
-            <TextField fx:id="digitalTit" layoutX="14.0" layoutY="77.0" />
-            <TextField fx:id="digitalPro" layoutX="179.0" layoutY="127.0" />
-            <Text layoutX="13.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo" />
-            <Text layoutX="179.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produtora" />
-            <TextField fx:id="digitalGen" layoutX="14.0" layoutY="127.0" />
-            <TextField fx:id="digitalPla" layoutX="179.0" layoutY="182.0" />
-            <Text layoutX="13.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gênero" />
-            <Text layoutX="179.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plataforma" />
-            <TextField fx:id="digitalIdi" layoutX="14.0" layoutY="182.0" />
-            <TextField fx:id="digitalTam" layoutX="179.0" layoutY="241.0" />
-            <Text layoutX="13.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idioma" />
-            <Text layoutX="179.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tamanho" />
-            <Button layoutX="188.0" layoutY="337.0" mnemonicParsing="false" onAction="#modificarD" text="Editar" />
-            <TextField fx:id="digitalAno" layoutX="179.0" layoutY="305.0" />
-            <Text layoutX="180.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano de lançamento" />
-            <TextField fx:id="digitalIns" layoutX="343.0" layoutY="77.0" />
-            <Text layoutX="344.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instruções" />
-            <TextField fx:id="digitalKey" layoutX="343.0" layoutY="127.0" />
-            <Text layoutX="343.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key" />
-            <Button layoutX="178.0" layoutY="27.0" mnemonicParsing="false" onAction="#encontrarD" text="Encontrar" />
-            <Button layoutX="303.0" layoutY="337.0" mnemonicParsing="false" onAction="#excluirD" text="Excluir" />
+            <TextField fx:id="digitalId" layoutX="46.0" layoutY="2.0" />
+            <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" />
+            <TextArea fx:id="digitalDesc" layoutX="13.0" layoutY="233.0" prefHeight="144.0" prefWidth="250.0" />
+            <Text layoutX="13.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="digitalPre" layoutX="14.0" layoutY="127.0" prefHeight="25.0" prefWidth="100.0" />
+            <Text layoutX="13.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="digitalTit" layoutX="14.0" layoutY="65.0" prefHeight="25.0" prefWidth="400.0" />
+            <TextField fx:id="digitalPro" layoutX="447.0" layoutY="65.0" prefHeight="25.0" prefWidth="235.0" />
+            <Text layoutX="13.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="438.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produtora">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="digitalGen" layoutX="137.0" layoutY="127.0" />
+            <TextField fx:id="digitalPla" layoutX="536.0" layoutY="179.0" />
+            <Text layoutX="138.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gênero">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="536.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plataforma">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="digitalIdi" layoutX="307.0" layoutY="127.0" prefHeight="25.0" prefWidth="140.0" />
+            <TextField fx:id="digitalTam" layoutX="476.0" layoutY="127.0" prefWidth="60.0" />
+            <Text layoutX="307.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idioma">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="477.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tamanho">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Button layoutX="586.0" layoutY="269.0" mnemonicParsing="false" onAction="#modificarD" prefHeight="50.0" prefWidth="100.0" text="Editar produto" />
+            <TextField fx:id="digitalAno" layoutX="564.0" layoutY="127.0" prefWidth="120.0" />
+            <Text layoutX="564.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano de lançamento">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="digitalIns" layoutX="307.0" layoutY="233.0" prefHeight="144.0" prefWidth="250.0" />
+            <Text layoutX="307.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instruções">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="digitalKey" layoutX="13.0" layoutY="179.0" prefHeight="25.0" prefWidth="500.0" />
+            <Text layoutX="13.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Button layoutX="211.0" layoutY="2.0" mnemonicParsing="false" onAction="#encontrarD" text="Procurar" />
+            <Button layoutX="586.0" layoutY="327.0" mnemonicParsing="false" onAction="#excluirD" prefHeight="50.0" prefWidth="100.0" text="Excluir produto" />
          </children>
       </Pane>
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="613.0">
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="700.0">
          <menus>
             <Menu mnemonicParsing="false" text="Inicio">
                <items>
@@ -127,11 +214,25 @@
             </Menu>
          </menus>
       </MenuBar>
-      <RadioButton layoutX="24.0" layoutY="107.0" mnemonicParsing="false" onAction="#showDigital" text="Jogo digital">
+      <RadioButton layoutX="445.0" layoutY="66.0" mnemonicParsing="false" onAction="#showDigital" text="Jogo digital">
          <toggleGroup>
             <ToggleGroup fx:id="tipos" />
-         </toggleGroup></RadioButton>
-      <RadioButton layoutX="24.0" layoutY="90.0" mnemonicParsing="false" onAction="#showFisico" text="Jogo físico" toggleGroup="$tipos" />
-      <RadioButton layoutX="24.0" layoutY="73.0" mnemonicParsing="false" onAction="#showConsole" text="Console" toggleGroup="$tipos" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <RadioButton layoutX="315.0" layoutY="66.0" mnemonicParsing="false" onAction="#showFisico" text="Jogo físico" toggleGroup="$tipos">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <RadioButton layoutX="197.0" layoutY="66.0" mnemonicParsing="false" onAction="#showConsole" text="Console" toggleGroup="$tipos">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <Label alignment="CENTER" layoutX="217.0" layoutY="33.0" prefHeight="33.0" prefWidth="267.0" text="Cadastro de Produtos" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

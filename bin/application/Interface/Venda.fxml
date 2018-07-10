@@ -7,9 +7,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerVenda">
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerVenda">
    <children>
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="700.0">
          <menus>
             <Menu mnemonicParsing="false" text="Inicio">
                <items>
@@ -44,32 +44,65 @@
             </Menu>
          </menus>
       </MenuBar>
-      <Pane fx:id="vendaPane" layoutX="-1.0" layoutY="28.0" prefHeight="371.0" prefWidth="600.0" visible="false">
+      <Pane fx:id="vendaPane" layoutX="-1.0" layoutY="28.0" prefHeight="400.0" prefWidth="700.0" visible="false">
          <children>
-            <Button layoutX="300.0" layoutY="61.0" mnemonicParsing="false" onAction="#adicionarItem" text="Adicionar" />
-            <TableView fx:id="tabela_estoque" layoutX="39.0" layoutY="10.0" prefHeight="352.0" prefWidth="200.0">
+            <Button layoutX="543.0" layoutY="48.0" mnemonicParsing="false" onAction="#adicionarItem" text="Adicionar" />
+            <TableView fx:id="tabela_estoque" layoutX="27.0" layoutY="48.0" prefHeight="316.0" prefWidth="323.0">
                <columns>
-                  <TableColumn fx:id="colId" prefWidth="83.0" text="id" />
-                  <TableColumn fx:id="colNome" prefWidth="116.0" text="nome" />
+                  <TableColumn fx:id="colId" prefWidth="99.0" text="ID" />
+                  <TableColumn fx:id="colNome" prefWidth="223.0" text="Nome" />
                </columns>
             </TableView>
-            <TextField fx:id="idField" layoutX="247.0" layoutY="36.0" />
-            <Text layoutX="247.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" />
-            <TextField fx:id="totalField" editable="false" layoutX="415.0" layoutY="172.0" />
-            <Text layoutX="415.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total a pagar" />
-            <Button layoutX="303.0" layoutY="340.0" mnemonicParsing="false" onAction="#finalizarCompra" text="Finalizar" />
-            <TextArea fx:id="produtosText" editable="false" layoutX="415.0" layoutY="14.0" prefHeight="129.0" prefWidth="172.0" />
-            <TextField fx:id="pagoField" layoutX="415.0" layoutY="236.0" />
-            <Text layoutX="415.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor pago" />
+            <TextField fx:id="idField" layoutX="381.0" layoutY="48.0" />
+            <Text layoutX="381.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+            <TextField fx:id="totalField" editable="false" layoutX="381.0" layoutY="340.0" prefHeight="25.0" prefWidth="100.0" />
+            <Text layoutX="381.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total a pagar">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Button layoutX="613.0" layoutY="340.0" mnemonicParsing="false" onAction="#finalizarCompra" text="Finalizar" />
+            <TextArea fx:id="produtosText" editable="false" layoutX="381.0" layoutY="82.0" prefHeight="233.0" prefWidth="292.0" />
+            <TextField fx:id="pagoField" layoutX="493.0" layoutY="340.0" prefHeight="25.0" prefWidth="100.0" />
+            <Text layoutX="493.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor pago">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Label layoutX="161.0" layoutY="24.0" text="Produtos">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
-      <Pane fx:id="inicialPane" layoutX="14.0" layoutY="28.0" prefHeight="200.0" prefWidth="576.0">
+      <Pane fx:id="inicialPane" layoutY="28.0" prefHeight="400.0" prefWidth="700.0">
          <children>
-            <TextField fx:id="idFunc" layoutX="14.0" layoutY="27.0" />
-            <TextField fx:id="cpfCli" layoutX="214.0" layoutY="27.0" />
-            <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id do funcionario" />
-            <Text layoutX="214.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cpf do cliente" />
-            <Button layoutX="242.0" layoutY="135.0" mnemonicParsing="false" onAction="#iniciarCompra" text="Iniciar compra" />
+            <TextField fx:id="idFunc" layoutX="76.0" layoutY="27.0" prefHeight="25.0" prefWidth="150.0" />
+            <TextField fx:id="cpfCli" layoutX="397.0" layoutY="27.0" prefWidth="150.0" />
+            <Text layoutX="105.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID do funcionario" />
+            <Text layoutX="434.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF do cliente" />
+            <Button layoutX="607.0" layoutY="15.0" mnemonicParsing="false" onAction="#iniciarCompra" prefHeight="50.0" prefWidth="70.0" text="Iniciar processo" textAlignment="CENTER" wrapText="true" />
+            <TableView layoutX="31.0" layoutY="85.0" prefHeight="308.0" prefWidth="240.0">
+              <columns>
+                <TableColumn prefWidth="84.0" text="ID" />
+                <TableColumn prefWidth="155.0" text="Nome" />
+              </columns>
+            </TableView>
+            <TableView layoutX="302.0" layoutY="85.0" prefHeight="308.0" prefWidth="340.0">
+              <columns>
+                <TableColumn prefWidth="118.0" text="CPF" />
+                <TableColumn prefWidth="221.0" text="Nome" />
+              </columns>
+            </TableView>
+            <Label layoutX="112.0" layoutY="60.0" text="Funcionários">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="448.0" layoutY="60.0" text="Clientes">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>

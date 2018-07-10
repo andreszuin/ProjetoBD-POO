@@ -17,7 +17,7 @@ public class Conecta {
             conn = DriverManager.getConnection(caminho, usuario, senha);
             //JOptionPane.showMessageDialog(null,"conexão realizada com sucesso");
         }catch (SQLException ex){
-            JOptionPane.showMessageDialog(null,"erro ao conectar");
+            JOptionPane.showMessageDialog(null,"Erro ao conectar!\n"+ex,"Erro", JOptionPane.ERROR_MESSAGE);
             Main.mainstage.close();
             System.exit(0);
         }

@@ -41,7 +41,7 @@ public class ControllerAddItem extends ControllerMaster{
     public TextField fisicoEst;
     //digital
     public TextField digitalTam;
-    public TextField digitalIns;
+    public TextArea digitalIns;
     public TextField digitalKey;
 
     private Integer helper = 0;

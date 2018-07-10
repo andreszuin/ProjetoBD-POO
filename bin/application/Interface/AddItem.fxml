@@ -7,34 +7,61 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerAddItem">
+<AnchorPane prefHeight="575.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ControllerAddItem">
    <children>
-      <RadioButton layoutX="14.0" layoutY="63.0" mnemonicParsing="false" onAction="#showConsole" text="Console">
+      <RadioButton layoutX="263.0" layoutY="72.0" mnemonicParsing="false" onAction="#showConsole" text="Console">
          <toggleGroup>
             <ToggleGroup fx:id="tipos" />
-         </toggleGroup></RadioButton>
-      <Pane fx:id="consolePane" layoutX="97.0" layoutY="32.0" prefHeight="363.0" prefWidth="506.0" visible="false">
+         </toggleGroup>
+         <font>
+            <Font size="13.0" />
+         </font></RadioButton>
+      <Pane fx:id="consolePane" layoutX="1.0" layoutY="95.0" prefHeight="482.0" prefWidth="700.0" visible="false">
          <children>
-            <TextArea fx:id="consoleDesc" layoutX="15.0" layoutY="182.0" prefHeight="92.0" prefWidth="149.0" />
-            <Text layoutX="15.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descriçao" />
-            <TextField fx:id="consolePre" layoutX="214.0" layoutY="27.0" />
-            <Text layoutX="214.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço" />
-            <TextField fx:id="consoleMar" layoutX="15.0" layoutY="27.0" />
-            <TextField fx:id="consoleMod" layoutX="214.0" layoutY="77.0" />
-            <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca" />
-            <Text layoutX="214.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo" />
-            <TextField fx:id="consoleCor" layoutX="15.0" layoutY="77.0" />
-            <TextField fx:id="consoleMem" layoutX="214.0" layoutY="127.0" />
-            <Text layoutX="14.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cor" />
-            <Text layoutX="214.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memória" />
-            <TextField fx:id="consoleCtr" layoutX="15.0" layoutY="127.0" />
-            <TextField fx:id="consoleEst" layoutX="214.0" layoutY="182.0" />
-            <Text layoutX="14.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controles" />
-            <Text layoutX="214.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque" />
-            <Button layoutX="188.0" layoutY="337.0" mnemonicParsing="false" onAction="#adicionarC" text="Adicionar" />
+            <TextArea fx:id="consoleDesc" layoutX="22.0" layoutY="175.0" prefHeight="218.0" prefWidth="650.0" />
+            <Text layoutX="22.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descriçao">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="consolePre" layoutX="22.0" layoutY="90.0" prefHeight="25.0" prefWidth="126.0" />
+            <Text layoutX="23.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="consoleMar" layoutX="425.0" layoutY="27.0" prefHeight="25.0" prefWidth="250.0" />
+            <TextField fx:id="consoleMod" layoutX="23.0" layoutY="27.0" prefHeight="25.0" prefWidth="350.0" />
+            <Text layoutX="422.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="25.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="consoleCor" layoutX="177.0" layoutY="90.0" prefHeight="25.0" prefWidth="85.0" />
+            <TextField fx:id="consoleMem" layoutX="288.0" layoutY="90.0" prefHeight="25.0" prefWidth="85.0" />
+            <Text layoutX="177.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cor">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="288.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Espaço do Hd">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="consoleCtr" layoutX="572.0" layoutY="90.0" prefHeight="25.0" prefWidth="103.0" />
+            <TextField fx:id="consoleEst" layoutX="425.0" layoutY="90.0" prefHeight="25.0" prefWidth="103.0" />
+            <Text layoutX="572.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controles">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="425.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Button alignment="CENTER" layoutX="569.0" layoutY="405.0" mnemonicParsing="false" onAction="#adicionarC" prefHeight="50.0" prefWidth="110.0" text="Adicionar Produto" textAlignment="CENTER" wrapText="true" />
          </children>
       </Pane>
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="603.0">
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="700.0">
          <menus>
             <Menu mnemonicParsing="false" text="Inicio">
                <items>
@@ -69,50 +96,103 @@
             </Menu>
          </menus>
       </MenuBar>
-      <Pane fx:id="jogoPane" layoutX="97.0" layoutY="32.0" prefHeight="363.0" prefWidth="506.0" visible="false">
+      <Pane fx:id="jogoPane" layoutY="94.0" prefHeight="482.0" prefWidth="700.0" visible="false">
          <children>
-            <TextArea fx:id="jogoDesc" layoutX="14.0" layoutY="182.0" prefHeight="92.0" prefWidth="149.0" />
-            <Text layoutX="14.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descriçao" />
-            <TextField fx:id="jogoPre" layoutX="171.0" layoutY="27.0" />
-            <Text layoutX="171.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço" />
-            <TextField fx:id="jogoTit" layoutX="14.0" layoutY="27.0" />
-            <TextField fx:id="jogoPro" layoutX="171.0" layoutY="77.0" />
-            <Text layoutX="13.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo" />
-            <Text layoutX="171.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produtora" />
-            <TextField fx:id="jogoGen" layoutX="14.0" layoutY="77.0" />
-            <TextField fx:id="jogoPla" layoutX="171.0" layoutY="127.0" />
-            <Text layoutX="13.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gênero" />
-            <Text layoutX="171.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plataforma" />
-            <TextField fx:id="jogoIdi" layoutX="14.0" layoutY="127.0" />
-            <Text layoutX="13.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idioma" />
-            <Button layoutX="188.0" layoutY="337.0" mnemonicParsing="false" onAction="#adicionarJ" text="Adicionar" />
-            <TextField fx:id="jogoAno" layoutX="171.0" layoutY="182.0" />
-            <Text layoutX="172.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano de lançamento" />
-            <Pane fx:id="digitalPane" layoutX="332.0" layoutY="8.0" prefHeight="153.0" prefWidth="149.0" visible="false">
+            <TextArea fx:id="jogoDesc" layoutX="24.0" layoutY="362.0" prefHeight="97.0" prefWidth="521.0" />
+            <Text layoutX="25.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descriçao">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="jogoPre" layoutX="25.0" layoutY="85.0" prefHeight="25.0" prefWidth="110.0" />
+            <Text layoutX="25.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="jogoTit" layoutX="25.0" layoutY="27.0" prefHeight="25.0" prefWidth="360.0" />
+            <TextField fx:id="jogoPro" layoutX="415.0" layoutY="27.0" prefHeight="25.0" prefWidth="261.0" />
+            <Text layoutX="25.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="415.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produtora">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="jogoGen" layoutX="163.0" layoutY="85.0" prefHeight="25.0" prefWidth="223.0" />
+            <TextField fx:id="jogoPla" layoutX="416.0" layoutY="85.0" prefHeight="25.0" prefWidth="261.0" />
+            <Text layoutX="163.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gênero">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="413.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plataforma">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="jogoIdi" layoutX="24.0" layoutY="141.0" prefHeight="25.0" prefWidth="223.0" />
+            <Text layoutX="26.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idioma">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Button layoutX="568.0" layoutY="410.0" mnemonicParsing="false" onAction="#adicionarJ" prefHeight="50.0" prefWidth="110.0" text="Adicionar Jogo" />
+            <TextField fx:id="jogoAno" layoutX="265.0" layoutY="141.0" prefHeight="25.0" prefWidth="121.0" />
+            <Text layoutX="265.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano de lançamento">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Pane fx:id="digitalPane" layoutX="24.0" layoutY="121.0" prefHeight="209.0" prefWidth="650.0" visible="false">
                <children>
-                  <TextField fx:id="digitalTam" layoutY="72.0" />
-                  <Text layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tamanho" />
-                  <TextField fx:id="digitalIns" layoutY="121.0" />
-                  <Text layoutX="1.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instruções" />
-                  <TextField fx:id="digitalKey" layoutX="1.0" layoutY="17.0" />
-                  <Text layoutX="1.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key" />
+                  <Text layoutX="530.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tamanho">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <TextArea fx:id="digitalIns" layoutY="135.0" prefHeight="71.0" prefWidth="650.0" />
+                  <Text layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instruções">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Text layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <TextField fx:id="digitalTam" layoutX="530.0" layoutY="20.0" prefHeight="25.0" prefWidth="120.0" />
+                  <TextField fx:id="digitalKey" layoutY="78.0" prefHeight="25.0" prefWidth="650.0" />
                </children>
             </Pane>
-            <Pane fx:id="fisicoPane" layoutX="171.0" layoutY="224.0" prefHeight="50.0" prefWidth="149.0" visible="false">
+            <Pane fx:id="fisicoPane" layoutX="413.0" layoutY="116.0" prefHeight="50.0" prefWidth="149.0" visible="false">
                <children>
-                  <TextField fx:id="fisicoEst" layoutY="24.0" />
-                  <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque" />
+                  <TextField fx:id="fisicoEst" layoutY="24.0" prefHeight="25.0" prefWidth="120.0" />
+                  <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estoque">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
                </children>
             </Pane>
-            <RadioButton layoutX="353.0" layoutY="178.0" mnemonicParsing="false" onAction="#showFisico" text="Jogo Fisico">
+            <RadioButton layoutX="568.0" layoutY="333.0" mnemonicParsing="false" onAction="#showFisico" text="Jogo Fisico">
                <toggleGroup>
                   <ToggleGroup fx:id="tiposJ" />
                </toggleGroup>
+               <font>
+                  <Font size="13.0" />
+               </font>
             </RadioButton>
-            <RadioButton layoutX="353.0" layoutY="195.0" mnemonicParsing="false" onAction="#showDigital" text="Jogo digital" toggleGroup="$tiposJ" />
-            <RadioButton layoutX="353.0" layoutY="212.0" mnemonicParsing="false" onAction="#showAmbos" text="Ambos" toggleGroup="$tiposJ" />
+            <RadioButton layoutX="568.0" layoutY="358.0" mnemonicParsing="false" onAction="#showDigital" text="Jogo digital" toggleGroup="$tiposJ">
+               <font>
+                  <Font size="13.0" />
+               </font></RadioButton>
+            <RadioButton layoutX="568.0" layoutY="383.0" mnemonicParsing="false" onAction="#showAmbos" text="Ambos" toggleGroup="$tiposJ">
+               <font>
+                  <Font size="13.0" />
+               </font></RadioButton>
          </children>
       </Pane>
-      <RadioButton layoutX="14.0" layoutY="80.0" mnemonicParsing="false" onAction="#showJogo" text="Jogo" toggleGroup="$tipos" />
+      <RadioButton layoutX="384.0" layoutY="72.0" mnemonicParsing="false" onAction="#showJogo" text="Jogo" toggleGroup="$tipos">
+         <font>
+            <Font size="13.0" />
+         </font></RadioButton>
+      <Label alignment="CENTER" layoutX="217.0" layoutY="32.0" prefHeight="33.0" prefWidth="267.0" text="Cadastro de Produtos" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

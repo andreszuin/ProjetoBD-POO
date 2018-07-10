@@ -97,7 +97,7 @@ public class ControllerVenda extends ControllerMaster{
             conex.executa("select * from produto where prodid='" +Integer.parseInt(idField.getText())+ "'");
             conex.rs.first();
             nome = conex.rs.getString("nome");
-            preco = conex.rs.getBigDecimal("preÃ§o").doubleValue();
+            preco = conex.rs.getBigDecimal("preço").doubleValue();
         }catch(SQLException ex){
             JOptionPane.showMessageDialog(null,"erro ao obter os dados\n erro:"+ex);
         }
