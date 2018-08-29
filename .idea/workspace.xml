@@ -10,14 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bd1e2b5-e141-4c72-99c8-457f0a38a98f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/HaloGames-aula321.jar" afterPath="$PROJECT_DIR$/HaloGames-aula321.jar" />
-      <change beforePath="$PROJECT_DIR$/HaloGames-postgres.jar" afterPath="$PROJECT_DIR$/HaloGames-postgres.jar" />
-      <change beforePath="$PROJECT_DIR$/bin/application/Controller/ControllerMenu.class" afterPath="$PROJECT_DIR$/bin/application/Controller/ControllerMenu.class" />
-      <change beforePath="$PROJECT_DIR$/bin/application/Controller/ControllerVenda.class" afterPath="$PROJECT_DIR$/bin/application/Controller/ControllerVenda.class" />
-      <change beforePath="$PROJECT_DIR$/bin/application/Interface/Menu.fxml" afterPath="$PROJECT_DIR$/bin/application/Interface/Menu.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/application/Controller/ControllerMenu.java" afterPath="$PROJECT_DIR$/src/application/Controller/ControllerMenu.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/Controller/ControllerVenda.java" afterPath="$PROJECT_DIR$/src/application/Controller/ControllerVenda.java" />
-      <change beforePath="$PROJECT_DIR$/src/application/Interface/Menu.fxml" afterPath="$PROJECT_DIR$/src/application/Interface/Menu.fxml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/ProjetoBD_POO_jar/ProjetoBD-POO.jar" afterPath="$PROJECT_DIR$/classes/artifacts/ProjetoBD_POO_jar/ProjetoBD-POO.jar" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,31 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ControllerMaster.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ControllerMaster.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerMaster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="522">
               <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerEstoque.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerEstoque.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerVenda.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVenda.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="195" column="89" lean-forward="true" selection-start-line="195" selection-start-column="89" selection-end-line="195" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -66,13 +40,6 @@
               <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HaloGames.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HaloGames.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -209,10 +176,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,6 +211,13 @@
               <item name="ProjetoBD-POO" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetoBD-POO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetoBD-POO" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="MController" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -258,6 +228,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,10 +461,10 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JAR Application.HaloGames-postgres.jar" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Testes.trocoTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Testes.impostoTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Testes.precoFTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Testes.trocoTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Testes.impostoTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Testes.precoFTest" />
       </list>
     </recent_temporary>
   </component>
@@ -514,7 +488,10 @@
       <workItem from="1531184169788" duration="222000" />
       <workItem from="1531184429440" duration="13332000" />
       <workItem from="1531240691896" duration="3180000" />
-      <workItem from="1531247055757" duration="161000" />
+      <workItem from="1531247055757" duration="1451000" />
+      <workItem from="1531257461949" duration="700000" />
+      <workItem from="1532102258709" duration="178000" />
+      <workItem from="1535514899791" duration="238000" />
     </task>
     <servers />
   </component>
@@ -530,11 +507,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47967000" />
+    <option name="totallyTimeSpent" value="50373000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1319" height="784" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -548,7 +524,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -576,21 +552,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/application/Conecta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/MController/ControllerNotaFiscal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -609,7 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-930">
           <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -888,7 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-974">
           <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -896,7 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4293">
           <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,7 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -975,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,22 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerMaster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVerFunc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/MController/ControllerPedido.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1017,6 +956,45 @@
             <marker date="1531237640322" expanded="true" signature="552:615" ph="insert into pedido... " />
             <marker date="1531237640322" expanded="true" signature="1495:1540" ph="update pedido... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVerCliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/application/Controller/ControllerMenu.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVenda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3009">
+          <caret line="195" column="89" lean-forward="false" selection-start-line="195" selection-start-column="89" selection-end-line="195" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HaloGames.png" />
+    <entry file="file://$PROJECT_DIR$/src/Package application.png" />
+    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerEstoque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVerFunc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,40 +1008,173 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVerCliente.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerMaster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        <state relative-caret-position="522">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HaloGames.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/application/Controller/ControllerMenu.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerEstoque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Controller/ControllerVenda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="195" column="89" lean-forward="true" selection-start-line="195" selection-start-column="89" selection-end-line="195" selection-end-column="89" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/src/application.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>application</OriginalElement>
+          <nodes>
+            <node x="170.00850626914507" y="1326.0">application.MController.ControllerJogo</node>
+            <node x="4274.362108498279" y="1370.0">application.MController.ControllerPessoa</node>
+            <node x="2239.374661882641" y="960.5">application.Model.Pedido</node>
+            <node x="47.06639587756581" y="188.5">application.Model.Jogo</node>
+            <node x="3916.562108498278" y="2420.5">application.Controller.ControllerMenu</node>
+            <node x="2515.431900251049" y="949.0">application.Model.NotaFiscal</node>
+            <node x="1832.7310606060603" y="1392.0">application.MController.ControllerPedidoProduto</node>
+            <node x="540.3580625442323" y="960.5">application.Model.Console</node>
+            <node x="4841.976892050031" y="1004.5">application.Model.Funcionario</node>
+            <node x="1727.5637426993812" y="982.5">application.Model.PedidoProduto</node>
+            <node x="4606.562108498278" y="2244.0">application.Controller.ControllerModFunc</node>
+            <node x="211.49999999999977" y="496.5">application.Model.JogoDigital</node>
+            <node x="4347.562108498278" y="2288.0">application.Controller.ControllerAddCliente</node>
+            <node x="2372.1887426993812" y="1381.0">application.MController.ControllerPedido</node>
+            <node x="4865.562108498278" y="2288.0">application.Controller.ControllerAddFunc</node>
+            <node x="3796.7811147186144" y="1271.0">application.Controller.ControllerMaster</node>
+            <node x="1546.7310606060603" y="1347.5">application.Model.TabelaClientes</node>
+            <node x="56.5" y="518.5">application.Model.JogoFisico</node>
+            <node x="2184.337203281352" y="419.0">application.Conecta</node>
+            <node x="995.5583333333332" y="1837.0">application.Controller.ControllerModItem</node>
+            <node x="839.425172935812" y="971.0">application.MController.ControllerJogoF</node>
+            <node x="1131.425172935812" y="971.0">application.MController.ControllerJogoD</node>
+            <node x="2090.1887426993812" y="1403.5">application.Controller.CampoNulloException</node>
+            <node x="4779.562108498278" y="1370.0">application.MController.ControllerFunc</node>
+            <node x="2176.3560606060605" y="1980.0">application.Controller.ControllerVenda</node>
+            <node x="3153.431900251049" y="1359.0">application.Testes</node>
+            <node x="188.22969412384282" y="0.0">application.Model.Produto</node>
+            <node x="1393.0669478275868" y="2343.0">application.Controller.ControllerVerCliente</node>
+            <node x="529.5501729358116" y="1370.0">application.MController.ControllerConsole</node>
+            <node x="3420.512606335745" y="1314.5">application.Model.TabelaFuncionarios</node>
+            <node x="2174.9372032813517" y="177.0">application.Main</node>
+            <node x="252.84278542576408" y="2002.0">application.Controller.ControllerAddItem</node>
+            <node x="2879.431900251049" y="1314.5">application.Model.TabelaEstoque</node>
+            <node x="4088.562108498278" y="2255.0">application.Controller.ControllerModCliente</node>
+            <node x="3547.562108498278" y="2332.0">application.Controller.ControllerVerFunc</node>
+            <node x="3073.726892050031" y="2332.0">application.Controller.ControllerEstoque</node>
+            <node x="2621.431900251049" y="1381.0">application.MController.ControllerNotaFiscal</node>
+            <node x="4508.10070157384" y="452.5">application.Model.Pessoa</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="application.Controller.ControllerVerFunc" target="application.Controller.ControllerMaster">
+              <point x="145.41666666666652" y="-103.0" />
+              <point x="3867.4787751649446" y="1817.0" />
+              <point x="3901.8644480519474" y="1817.0" />
+              <point x="8.08333333333303" y="158.0" />
+            </edge>
+            <edge source="application.Controller.ControllerVenda" target="application.Controller.ControllerMaster">
+              <point x="170.67307692307713" y="-455.0" />
+              <point x="2524.5291375291376" y="1797.0" />
+              <point x="3869.5311147186144" y="1797.0" />
+              <point x="-24.25" y="158.0" />
+            </edge>
+            <edge source="application.Controller.ControllerEstoque" target="application.Controller.ControllerMaster">
+              <point x="134.58333333333303" y="-103.0" />
+              <point x="3369.810225383364" y="1807.0" />
+              <point x="3885.6977813852814" y="1807.0" />
+              <point x="-8.08333333333303" y="158.0" />
+            </edge>
+            <edge source="application.Model.Funcionario" target="application.Model.Pessoa">
+              <point x="0.0" y="-25.5" />
+              <point x="4897.476892050031" y="769.0" />
+              <point x="4634.386415859554" y="769.0" />
+              <point x="58.285714285714675" y="91.5" />
+            </edge>
+            <edge source="application.Controller.ControllerAddFunc" target="application.Controller.ControllerMaster">
+              <point x="-87.60000000000036" y="-147.0" />
+              <point x="4887.462108498277" y="1777.0" />
+              <point x="3982.6977813852814" y="1777.0" />
+              <point x="88.91666666666697" y="158.0" />
+            </edge>
+            <edge source="application.Model.JogoFisico" target="application.Model.Jogo">
+              <point x="0.0" y="-25.5" />
+              <point x="114.0" y="399.0" />
+              <point x="149.73306254423233" y="399.0" />
+              <point x="14.666666666666657" y="69.5" />
+            </edge>
+            <edge source="application.Controller.ControllerAddItem" target="application.Controller.ControllerMaster">
+              <point x="98.76923076923077" y="-433.0" />
+              <point x="458.6120161949948" y="1767.0" />
+              <point x="3821.0311147186144" y="1767.0" />
+              <point x="-72.75" y="158.0" />
+            </edge>
+            <edge source="application.Controller.ControllerMenu" target="application.Controller.ControllerMaster">
+              <point x="0.0" y="-14.5" />
+              <point x="3982.562108498278" y="1817.0" />
+              <point x="3918.0311147186144" y="1817.0" />
+              <point x="24.25" y="158.0" />
+            </edge>
+            <edge source="application.Controller.ControllerVerCliente" target="application.Controller.ControllerMaster">
+              <point x="134.58333333333348" y="-92.0" />
+              <point x="1689.1502811609203" y="1787.0" />
+              <point x="3853.3644480519474" y="1787.0" />
+              <point x="-40.41666666666697" y="158.0" />
+            </edge>
+            <edge source="application.Controller.ControllerModCliente" target="application.Controller.ControllerMaster">
+              <point x="-93.85714285714312" y="-180.0" />
+              <point x="4104.204965641135" y="1807.0" />
+              <point x="3934.1977813852814" y="1807.0" />
+              <point x="40.41666666666697" y="158.0" />
+            </edge>
+            <edge source="application.Controller.ControllerAddCliente" target="application.Controller.ControllerMaster">
+              <point x="-87.60000000000036" y="-147.0" />
+              <point x="4369.462108498277" y="1797.0" />
+              <point x="3950.3644480519474" y="1797.0" />
+              <point x="56.58333333333303" y="158.0" />
+            </edge>
+            <edge source="application.Model.JogoDigital" target="application.Model.Jogo">
+              <point x="0.0" y="-47.5" />
+              <point x="282.4999999999998" y="399.0" />
+              <point x="179.0663958775658" y="399.0" />
+              <point x="44.0" y="69.5" />
+            </edge>
+            <edge source="application.Controller.ControllerModFunc" target="application.Controller.ControllerMaster">
+              <point x="-93.85714285714312" y="-191.0" />
+              <point x="4622.204965641135" y="1787.0" />
+              <point x="3966.5311147186144" y="1787.0" />
+              <point x="72.75" y="158.0" />
+            </edge>
+            <edge source="application.Controller.ControllerModItem" target="application.Controller.ControllerMaster">
+              <point x="99.86666666666679" y="-598.0" />
+              <point x="1202.425" y="1777.0" />
+              <point x="3837.1977813852814" y="1777.0" />
+              <point x="-56.58333333333303" y="158.0" />
+            </edge>
+            <edge source="application.Model.Jogo" target="application.Model.Produto">
+              <point x="0.0" y="-69.5" />
+              <point x="135.0663958775658" y="157.0" />
+              <point x="261.2296941238428" y="157.0" />
+              <point x="0.0" y="58.5" />
+            </edge>
+            <edge source="application.Model.Console" target="application.Model.Produto">
+              <point x="0.0" y="-69.5" />
+              <point x="607.8580625442323" y="769.0" />
+              <point x="516.4830625442323" y="769.0" />
+              <point x="516.4830625442323" y="157.0" />
+              <point x="309.89636079050933" y="157.0" />
+              <point x="48.666666666666515" y="58.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.2542533081285445" x="1327.0" y="2376.0" />
+          <SelectedNodes>
+            <node>application.Controller.ControllerMenu</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Inner Classes</Category>
+            <Category>Constructors</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
